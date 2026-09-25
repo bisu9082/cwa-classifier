@@ -1,0 +1,12 @@
+{
+  "constant_in_corpus": [
+    "cwc_2B_5",
+    "cwc_2B_11",
+    "cwc_2B_12"
+  ],
+  "constant_in_corpus_live_in_holdout": [
+    "cwc_2B_5",
+    "cwc_2B_11",
+    "cwc_2B_12"
+  ]
+}

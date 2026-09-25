@@ -1,0 +1,198 @@
+{
+  "query_timestamp_utc": "2026-09-16T17:18:42+00:00",
+  "pubchem_note": "PubChem is continuously updated and does not expose a discrete release identifier through PUG REST; the retrieval timestamp above is the version anchor.",
+  "similarity_endpoint": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/fastsimilarity_2d/cid/{CID}/cids/JSON",
+  "similarity_parameters": {
+    "Threshold": 85,
+    "MaxRecords": 50,
+    "fingerprint": "PubChem 2D subgraph fingerprint (881 bit)"
+  },
+  "property_endpoint": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{CIDs}/property/MolecularFormula,MolecularWeight,XLogP,TPSA,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,HeavyAtomCount,Complexity,SMILES,InChIKey,Title/JSON",
+  "property_list": [
+    "MolecularFormula",
+    "MolecularWeight",
+    "XLogP",
+    "TPSA",
+    "HBondDonorCount",
+    "HBondAcceptorCount",
+    "RotatableBondCount",
+    "HeavyAtomCount",
+    "Complexity",
+    "SMILES",
+    "InChIKey",
+    "Title"
+  ],
+  "property_batch_size": 100,
+  "request_interval_s": 0.25,
+  "missing_value_policy": "MolecularWeight and HeavyAtomCount are required; XLogP, TPSA, HBD, HBA, RotatableBondCount and Complexity are imputed as 0 when absent",
+  "cwc_unencoded_entries": [
+    "1A.7 (saxitoxin)",
+    "1A.8 (ricin)",
+    "1A.16 (carbamates)"
+  ],
+  "rdkit_version": "2026.03.6",
+  "n_seeds": 105,
+  "n_candidate_cids": 3324,
+  "analogues_per_seed_mean": 41.03809523809524,
+  "holdout_n_requested": 105,
+  "probe_n_requested": 10,
+  "holdout_removed_for_corpus_overlap": [
+    {
+      "cid": 449085,
+      "name": "Ethyl methylphosphonic acid (EMPA)"
+    },
+    {
+      "cid": 15778,
+      "name": "Isopropyl methylphosphonic acid (IMPA)"
+    },
+    {
+      "cid": 12026,
+      "name": "Pinacolyl methylphosphonic acid (PMPA)"
+    },
+    {
+      "cid": 12685,
+      "name": "Diethyl methylphosphonate"
+    },
+    {
+      "cid": 521983,
+      "name": "Dimethyl ethylphosphonate"
+    },
+    {
+      "cid": 10965,
+      "name": "2-Chloroethyl methyl sulfide"
+    },
+    {
+      "cid": 11002,
+      "name": "Dibutyl sulfide"
+    },
+    {
+      "cid": 12341,
+      "name": "2-Chloroethyl ethyl ether"
+    },
+    {
+      "cid": 10546,
+      "name": "Tripropyl phosphate"
+    },
+    {
+      "cid": 9395,
+      "name": "Paraoxon-ethyl"
+    },
+    {
+      "cid": 3072,
+      "name": "Diisopropyl phosphite"
+    },
+    {
+      "cid": 8365,
+      "name": "Ethyl salicylate"
+    },
+    {
+      "cid": 5284462,
+      "name": "Tetrachlorvinphos"
+    },
+    {
+      "cid": 91752,
+      "name": "Cadusafos"
+    },
+    {
+      "cid": 9011,
+      "name": "Merphos"
+    },
+    {
+      "cid": 31070,
+      "name": "Fenamiphos"
+    },
+    {
+      "cid": 17531,
+      "name": "Azinphos-ethyl"
+    },
+    {
+      "cid": 31957,
+      "name": "Pirimiphos-ethyl"
+    },
+    {
+      "cid": 7873,
+      "name": "Tetraethyl pyrophosphate (TEPP)"
+    },
+    {
+      "cid": 520087,
+      "name": "Diethyl N,N-dimethylphosphoramidate"
+    },
+    {
+      "cid": 85063,
+      "name": "Diethyl methylphosphonite"
+    },
+    {
+      "cid": 12264,
+      "name": "Diisopropyl sulfide"
+    },
+    {
+      "cid": 78925,
+      "name": "2-(Methylthio)ethanol"
+    },
+    {
+      "cid": 8361,
+      "name": "Phenyl salicylate"
+    },
+    {
+      "cid": 14122,
+      "name": "Diethyl benzylphosphonate"
+    },
+    {
+      "cid": 9038,
+      "name": "Trimethyl thiophosphate"
+    },
+    {
+      "cid": 31354,
+      "name": "Triethyl thiophosphate"
+    },
+    {
+      "cid": 17305,
+      "name": "O,O-Diethyl phosphorochloridothioate"
+    },
+    {
+      "cid": 15415,
+      "name": "Malaoxon"
+    },
+    {
+      "cid": 23717,
+      "name": "Propaphos"
+    },
+    {
+      "cid": 37125,
+      "name": "Sulprofos"
+    },
+    {
+      "cid": 12541,
+      "name": "Thiometon"
+    },
+    {
+      "cid": 16769,
+      "name": "Dimethylvinphos"
+    }
+  ],
+  "probe_removed_for_corpus_overlap": [],
+  "corpus_n": 3307,
+  "corpus_label_L0": {
+    "CWA": 993,
+    "Simulant": 857,
+    "Pesticide": 1457
+  },
+  "corpus_label_L1": {
+    "CWA": 904,
+    "Simulant": 904,
+    "Pesticide": 1499
+  },
+  "corpus_label_L2_retained": {
+    "CWA": 755,
+    "Simulant": 700,
+    "Pesticide": 1112
+  },
+  "holdout_n": 72,
+  "holdout_dist": {
+    "CWA": 25,
+    "Simulant": 20,
+    "Pesticide": 27
+  },
+  "probe_n": 10,
+  "cwc_features_recomputed": true
+}

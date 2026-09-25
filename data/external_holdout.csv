@@ -1,0 +1,106 @@
+name,cas,cid,class,class_id,subclass,formula
+Methylphosphonyl dichloride (DC),676-97-1,,CWA,0,Schedule 2B.4 precursor,CH3Cl2OP
+Ethylphosphonyl difluoride,753-98-0,,CWA,0,Schedule 1B.9 precursor,C2H5F2OP
+Methylphosphonothioic dichloride,676-98-2,,CWA,0,Schedule 2B.4 precursor,CH3Cl2PS
+Methylphosphonic acid,993-13-5,,CWA,0,Nerve agent degradation product,CH5O3P
+Ethyl methylphosphonic acid (EMPA),1832-53-7,,CWA,0,Nerve agent degradation product,C3H9O3P
+Isopropyl methylphosphonic acid (IMPA),1832-54-8,,CWA,0,Sarin degradation product,C4H11O3P
+Pinacolyl methylphosphonic acid (PMPA),616-52-4,,CWA,0,Soman degradation product,C7H17O3P
+Diethyl methylphosphonate,683-08-9,,CWA,0,Schedule 2B.4 precursor,C5H13O3P
+Dimethyl ethylphosphonate,6163-75-3,,CWA,0,Schedule 2B.4 precursor,C4H11O3P
+Dimethyl phosphite,868-85-9,,CWA,0,Schedule 3B.10 precursor,C2H7O3P
+Phosphorus oxychloride,10025-87-3,,CWA,0,Schedule 3B.5 precursor,Cl3OP
+Phosphorus trichloride,7719-12-2,,CWA,0,Schedule 3B.6 precursor,Cl3P
+Phosphorus pentachloride,10026-13-8,,CWA,0,Schedule 3B.7 precursor,Cl5P
+Arsenic trichloride,7784-34-1,,CWA,0,Schedule 2B.7 precursor,AsCl3
+"N,N-Diisopropylaminoethanethiol",5842-07-9,,CWA,0,Schedule 2B.12 precursor,C8H19NS
+"N,N-Diisopropyl-2-aminoethyl chloride",96-79-7,,CWA,0,Schedule 2B.10 precursor,C8H18ClN
+"N,N-Diisopropylaminoethanol",96-80-0,,CWA,0,Schedule 2B.11 precursor,C8H19NO
+Quinuclidin-3-ol,1619-34-7,,CWA,0,Schedule 2B.9 precursor,C7H13NO
+Benzilic acid,76-93-7,,CWA,0,Schedule 2B.8 precursor,C14H12O3
+Thionyl chloride,7719-09-7,,CWA,0,Schedule 3B.14 precursor,Cl2OS
+Sulfur dichloride,10545-99-0,,CWA,0,Schedule 3B.13 precursor,Cl2S
+Methyldiethanolamine,105-59-9,,CWA,0,Schedule 3B.16 precursor,C5H13NO2
+Ethyldiethanolamine,139-87-7,,CWA,0,Schedule 3B.15 precursor,C6H15NO2
+Triethanolamine,102-71-6,,CWA,0,Schedule 3B.17 precursor,C6H15NO3
+CEPS (2-chloroethyl phenyl sulfide),5535-49-9,,Simulant,1,Sulfur mustard simulant,C8H9ClS
+2-Chloroethyl methyl sulfide,542-81-4,,Simulant,1,Sulfur mustard simulant,C3H7ClS
+Dibutyl sulfide,544-40-1,,Simulant,1,Sulfur mustard simulant,C8H18S
+Diethyl disulfide,110-81-6,,Simulant,1,Sulfur mustard simulant,C4H10S2
+Dipropyl disulfide,629-19-6,,Simulant,1,Sulfur mustard simulant,C6H14S2
+"1,4-Dithiane",505-29-3,,Simulant,1,Sulfur mustard simulant,C4H8S2
+"1,4-Thioxane",15980-15-1,,Simulant,1,Sulfur mustard simulant,C4H8OS
+Thiophene,110-02-1,,Simulant,1,Sulfur mustard simulant,C4H4S
+Thioanisole,100-68-5,,Simulant,1,Sulfur mustard simulant,C7H8S
+2-Chloroethyl ethyl ether,628-34-2,,Simulant,1,Sulfur mustard simulant,C4H9ClO
+Tributyl phosphate,126-73-8,,Simulant,1,G-agent simulant (phosphate),C12H27O4P
+Tripropyl phosphate,513-08-1,,Simulant,1,G-agent simulant (phosphate),C9H21O4P
+Paraoxon-ethyl,311-45-5,,Simulant,1,G-agent simulant (aryl phosphate),C10H14NO6P
+Diisopropyl phosphite,1809-20-7,,Simulant,1,G-agent simulant (phosphite),C6H15O3P
+Triphenyl phosphite,101-02-0,,Simulant,1,G-agent simulant (phosphite),C18H15O3P
+Ethyl salicylate,118-61-6,,Simulant,1,Miscellaneous simulant,C9H10O3
+Bensulide,741-58-2,,Pesticide,2,Phosphorodithioate herbicide,C14H24NO4PS3
+Chlorethoxyfos,54593-83-8,,Pesticide,2,Phosphorothioate insecticide,C6H11Cl4O3PS
+Mevinphos,7786-34-7,,Pesticide,2,Vinyl phosphate insecticide,C7H13O6P
+Naled,300-76-5,,Pesticide,2,Vinyl phosphate insecticide,C4H7Br2Cl2O4P
+Tetrachlorvinphos,22248-79-9,,Pesticide,2,Vinyl phosphate insecticide,C10H9Cl4O4P
+Monocrotophos,6923-22-4,,Pesticide,2,Vinyl phosphate insecticide,C7H14NO5P
+Dicrotophos,141-66-2,,Pesticide,2,Vinyl phosphate insecticide,C8H16NO5P
+Phosphamidon,13171-21-6,,Pesticide,2,Vinyl phosphate insecticide,C10H19ClNO5P
+Cadusafos,95465-99-9,,Pesticide,2,Phosphorodithioate nematicide,C10H23O2PS2
+Coumaphos,56-72-4,,Pesticide,2,Phosphorothioate insecticide,C14H16ClO5PS
+Fonofos,944-22-9,,Pesticide,2,Phosphonodithioate insecticide,C10H15OPS2
+Isofenphos,25311-71-1,,Pesticide,2,Phosphoramidothioate insecticide,C15H24NO4PS
+Merphos,150-50-5,,Pesticide,2,Phosphorotrithioite defoliant,C12H27PS3
+Fenamiphos,22224-92-6,,Pesticide,2,Phosphoramidate nematicide,C13H22NO3PS
+Azinphos-ethyl,2642-71-9,,Pesticide,2,Phosphorodithioate insecticide,C12H16N3O3PS2
+Edifenphos,17109-49-8,,Pesticide,2,Phosphorodithioate fungicide,C14H15O2PS2
+Iprobenfos,26087-47-8,,Pesticide,2,Phosphorothiolate fungicide,C13H21O3PS
+Pirimiphos-ethyl,23505-41-1,,Pesticide,2,Phosphorothioate insecticide,C13H24N3O3PS
+Trichloronate,327-98-0,,Pesticide,2,Phosphonothioate insecticide,C10H12Cl3O2PS
+Tetraethyl pyrophosphate (TEPP),107-49-3,,Pesticide,2,Pyrophosphate insecticide,C8H20O7P2
+Fosthietan,21548-32-3,,Pesticide,2,Phosphoramidodithioate nematicide,C6H12NO3PS2
+Methylphosphonous dichloride,676-83-5,,CWA,0,Schedule 2B.4 precursor,CH3Cl2P
+Ethylphosphonic dichloride,1066-50-8,,CWA,0,Schedule 2B.4 precursor,C2H5Cl2OP
+Propylphosphonic dichloride,4708-04-7,,CWA,0,Schedule 2B.4 precursor,C3H7Cl2OP
+"N,N-Dimethylphosphoramidic dichloride",677-43-0,,CWA,0,Schedule 2B.5 precursor,C2H6Cl2NOP
+"N,N-Diethylphosphoramidic dichloride",1498-54-0,,CWA,0,Schedule 2B.5 precursor,C4H10Cl2NOP
+"Diethyl N,N-dimethylphosphoramidate",2404-03-7,,CWA,0,Schedule 2B.6 precursor,C6H16NO3P
+"Dimethyl N,N-dimethylphosphoramidate",597-07-9,,CWA,0,Schedule 2B.6 precursor,C4H12NO3P
+Diethyl methylphosphonite,15715-41-0,,CWA,0,Schedule 2B.4 precursor,C5H13O2P
+Diisopropyl sulfide,625-80-9,,Simulant,1,Sulfur mustard simulant,C6H14S
+Dibenzyl sulfide,538-74-9,,Simulant,1,Sulfur mustard simulant,C14H14S
+2-(Methylthio)ethanol,5271-38-5,,Simulant,1,Sulfur mustard simulant,C3H8OS
+"1,3-Dithiane",505-23-7,,Simulant,1,Sulfur mustard simulant,C4H8S2
+Tetrahydrothiopyran,1613-51-0,,Simulant,1,Sulfur mustard simulant,C5H10S
+Benzyl methyl sulfide,766-92-7,,Simulant,1,Sulfur mustard simulant,C8H10S
+Ethyl phenyl sulfide,622-38-8,,Simulant,1,Sulfur mustard simulant,C8H10S
+Diphenyl sulfide,139-66-2,,Simulant,1,Sulfur mustard simulant,C12H10S
+Dimethyl disulfide,624-92-0,,Simulant,1,Sulfur mustard simulant,C2H6S2
+Dibutyl disulfide,629-45-8,,Simulant,1,Sulfur mustard simulant,C8H18S2
+Propyl salicylate,607-90-9,,Simulant,1,Miscellaneous simulant,C10H12O3
+Phenyl salicylate,118-55-8,,Simulant,1,Miscellaneous simulant,C13H10O3
+Diphenyl methylphosphonate,7526-26-3,,Simulant,1,G-agent simulant (phosphonate),C13H13O3P
+Diethyl benzylphosphonate,1080-32-6,,Simulant,1,G-agent simulant (phosphonate),C11H17O3P
+Triallyl phosphate,1623-19-4,,Simulant,1,G-agent simulant (phosphate),C9H15O4P
+Trimethyl thiophosphate,152-18-1,,Simulant,1,G-agent simulant (thiophosphate),C3H9O3PS
+Triethyl thiophosphate,126-68-1,,Simulant,1,G-agent simulant (thiophosphate),C6H15O3PS
+"O,O-Diethyl phosphorochloridothioate",2524-04-1,,Simulant,1,G-agent simulant (chlorothiophosphate),C4H10ClO2PS
+Malaoxon,1634-78-2,,Pesticide,2,Phosphate insecticide metabolite,C10H19O7PS
+Isoxathion,18854-01-8,,Pesticide,2,Phosphorothioate insecticide,C13H16NO4PS
+Pyrazophos,13457-18-6,,Pesticide,2,Phosphorothioate fungicide,C14H20N3O5PS
+Butamifos,36335-67-8,,Pesticide,2,Phosphoramidothioate herbicide,C13H21N2O4PS
+Anilofos,64249-01-0,,Pesticide,2,Phosphorodithioate herbicide,C13H19ClNO3PS2
+Cyanophos,2636-26-2,,Pesticide,2,Phosphorothioate insecticide,C9H10NO3PS
+Etrimfos,38260-54-7,,Pesticide,2,Phosphorothioate insecticide,C10H17N2O4PS
+Heptenophos,23560-59-0,,Pesticide,2,Vinyl phosphate insecticide,C9H12ClO4P
+Mecarbam,2595-54-2,,Pesticide,2,Phosphorodithioate insecticide,C10H20NO5PS2
+Methacrifos,62610-77-9,,Pesticide,2,Phosphorothioate insecticide,C7H13O5PS
+Phenthoate,2597-03-7,,Pesticide,2,Phosphorodithioate insecticide,C12H17O4PS2
+Piperophos,24151-93-7,,Pesticide,2,Phosphorodithioate herbicide,C14H28NO3PS2
+Propaphos,7292-16-2,,Pesticide,2,Phosphorothiolate insecticide,C13H21O4PS
+Sulprofos,35400-43-2,,Pesticide,2,Phosphorodithioate insecticide,C12H19O2PS3
+Thiometon,640-15-3,,Pesticide,2,Phosphorodithioate insecticide,C6H15O2PS3
+Vamidothion,2275-23-2,,Pesticide,2,Phosphorothioate insecticide,C8H18NO4PS2
+Dimethylvinphos,2274-67-1,,Pesticide,2,Vinyl phosphate insecticide,C10H10Cl3O4P
+Phosfolan,947-02-4,,Pesticide,2,Phosphoramidodithioate insecticide,C7H14NO3PS2

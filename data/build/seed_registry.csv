@@ -1,0 +1,106 @@
+name,cas,class,class_id,subclass,ref_formula,cid,formula,mw,smiles,inchikey,pubchem_title,resolved_via,declared_cid,declared_cid_ok,status
+Tabun (GA),77-81-6,CWA,0,G-series nerve agent,C5H11N2O2P,6500,C5H11N2O2P,162.13,CCOP(=O)(C#N)N(C)C,PJVJTCIRVMBVIA-UHFFFAOYSA-N,Tabun,cas,,False,verified_cas
+Sarin (GB),107-44-8,CWA,0,G-series nerve agent,C4H10FO2P,7871,C4H10FO2P,140.09,CC(C)OP(=O)(C)F,DYAHQFWOVKZOOW-UHFFFAOYSA-N,Sarin,cas,,False,verified_cas
+Soman (GD),96-64-0,CWA,0,G-series nerve agent,C7H16FO2P,7305,C7H16FO2P,182.17,CC(C(C)(C)C)OP(=O)(C)F,GRXKLBBBQUKJJZ-UHFFFAOYSA-N,Soman,cas,,False,verified_cas
+Cyclosarin (GF),329-99-7,CWA,0,G-series nerve agent,C7H14FO2P,64505,C7H14FO2P,180.16,CP(=O)(OC1CCCCC1)F,SNTRKUOVAPUGAY-UHFFFAOYSA-N,Cyclosarin,cas,,False,verified_cas
+Ethylsarin (GE),1189-87-3,CWA,0,G-series nerve agent,C5H12FO2P,65566,C5H12FO2P,154.12,CCP(=O)(OC(C)C)F,KXKAXOZWSFAJTG-UHFFFAOYSA-N,Ethylsarin,cas,,False,verified_cas
+Chlorosarin,1445-76-7,CWA,0,Schedule 1B precursor,C4H10ClO2P,102124,C4H10ClO2P,156.55,CC(C)OP(=O)(C)Cl,RHAHLPAWJVKXAZ-UHFFFAOYSA-N,2-Propyl methylphosphonochloridate,cas,,False,verified_cas
+Chlorosoman,7040-57-5,CWA,0,Schedule 1B precursor,C7H16ClO2P,145983,C7H16ClO2P,198.63,CC(C(C)(C)C)OP(=O)(C)Cl,XVNBZVNXJMOQEX-UHFFFAOYSA-N,Pinacolyl methylphosphonochloridate,cas,,False,verified_cas
+Methylphosphonyl difluoride (DF),676-99-3,CWA,0,Schedule 1B precursor,CH3F2OP,69610,CH3F2OP,100.004,CP(=O)(F)F,PQIOSYKVBBWRRI-UHFFFAOYSA-N,Methylphosphonic difluoride,cas,,False,verified_cas
+VX,50782-69-9,CWA,0,V-series nerve agent,C11H26NO2PS,39793,C11H26NO2PS,267.37,CCOP(=O)(C)SCCN(C(C)C)C(C)C,JJIUCEJQJXNMHV-UHFFFAOYSA-N,"Phosphonothioic acid, methyl-, S-(2-(bis(1-methylethyl)amino)ethyl) O-ethyl ester",cas,,False,verified_cas
+Russian VX (VR),159939-87-4,CWA,0,V-series nerve agent,C11H26NO2PS,178033,C11H26NO2PS,267.37,CCN(CC)CCSP(=O)(C)OCC(C)C,MNLAVFKVRUQAKW-UHFFFAOYSA-N,S-(2-(Diethylamino)ethyl) O-(2-methylpropyl) P-methylphosphonothioate,cas,,False,verified_cas
+VE,21738-25-0,CWA,0,V-series nerve agent,C10H24NO2PS,65568,C10H24NO2PS,253.34,CCN(CC)CCSP(=O)(CC)OCC,QXRUNSUMQBTCQS-UHFFFAOYSA-N,S-(2-(Diethylamino)ethyl) O-ethyl P-ethylphosphonothioate,cas,,False,verified_cas
+VG (Amiton),78-53-5,CWA,0,V-series nerve agent,C10H24NO3PS,6542,C10H24NO3PS,269.34,CCN(CC)CCSP(=O)(OCC)OCC,PJISLFCKHOHLLP-UHFFFAOYSA-N,Amiton,cas,,False,verified_cas
+VM,21770-86-5,CWA,0,V-series nerve agent,C9H22NO2PS,30800,C9H22NO2PS,239.32,CCN(CC)CCSP(=O)(C)OCC,BKWMHKJLXIRTAI-UHFFFAOYSA-N,S-(2-(Diethylamino)ethyl) O-ethyl P-methylphosphonothioate,cas,,False,verified_cas
+QL,57856-11-8,CWA,0,Schedule 1B precursor,C11H26NO2P,170325,C11H26NO2P,235.30,CCOP(C)OCCN(C(C)C)C(C)C,OIQVKKOBTVZIFE-UHFFFAOYSA-N,Agent QL,cas,,False,verified_cas
+A-230 Nerve Agent,,CWA,0,Novichok (Schedule 1A.13),C7H16FN2OP,160100773,C7H16FN2OP,194.19,CCN(CC)C(=NP(=O)(C)F)C,OUJDIWHRYQBZSR-UHFFFAOYSA-N,A-230 Nerve Agent,name,160100773,True,verified_name
+A-232,2387496-04-8,CWA,0,Novichok (Schedule 1A.14),C7H16FN2O2P,157299938,C7H16FN2O2P,210.19,CCN(CC)C(=NP(=O)(OC)F)C,BBTXAVJVSQSXHZ-UHFFFAOYSA-N,methyl N-(1-(diethylamino)ethylidene)phosphoramidofluoridate,cas,,False,verified_cas
+A-234,2387496-06-0,CWA,0,Novichok (Schedule 1A.14),C8H18FN2O2P,139033607,C8H18FN2O2P,224.21,CCN(CC)C(=NP(=O)(OCC)F)C,SBPSVLLDDYOPDZ-UHFFFAOYSA-N,Ethyl N-(1-(diethylamino)ethylidene)phosphoramidofluoridate,cas,,False,verified_cas
+Methyl-(bis(diethylamino)methylene)phosphonamidofluoridate,2387496-14-0,CWA,0,Novichok (Schedule 1A.15),C10H23FN3OP,146586254,C10H23FN3OP,251.28,CCN(CC)C(=NP(=O)(C)F)N(CC)CC,WJDIQLITBJEMBA-UHFFFAOYSA-N,N-(Bis(diethylamino)methylene)-P-methylphosphonamidic fluoride,cas,,False,verified_cas
+N-(1-(Di-n-decylamino)-n-decylidene)-P-decylphosphonamidic fluoride,2387495-99-8,CWA,0,Novichok (Schedule 1A.13 exemplar),C40H82FN2OP,165365051,C40H82FN2OP,657.1,CCCCCCCCCCN(CCCCCCCCCC)C(=NP(=O)(CCCCCCCCCC)F)CCCCCCCCC,IEPUOARPJDRIRJ-UHFFFAOYSA-N,N-(1-(Di-n-decylamino)-n-decylidene)-P-decylphosphonamidic fluoride,cas,,False,verified_cas
+Decyl N-(1-(didecylamino)decylidene)phosphoramidofluoridate,2387496-00-4,CWA,0,Novichok (Schedule 1A.14 exemplar),C40H82FN2O2P,165365085,C40H82FN2O2P,673.1,CCCCCCCCCCN(CCCCCCCCCC)C(=NP(=O)(OCCCCCCCCCC)F)CCCCCCCCC,XMKBSLNYHANASW-UHFFFAOYSA-N,Decyl N-[1-(didecylamino)decylidene]phosphoramidofluoridate,cas,,False,verified_cas
+Sulfur mustard (HD),505-60-2,CWA,0,Vesicant (sulfur mustard),C4H8Cl2S,10461,C4H8Cl2S,159.08,C(CCl)SCCCl,QKSKPIVNLNLAAV-UHFFFAOYSA-N,Sulfur Mustard,cas,,False,verified_cas
+Sesquimustard (Q),3563-36-8,CWA,0,Vesicant (sulfur mustard),C6H12Cl2S2,19092,C6H12Cl2S2,219.2,C(CSCCCl)SCCCl,AMGNHZVUZWILSB-UHFFFAOYSA-N,Sesquimustard,cas,,False,verified_cas
+O-Mustard (T),63918-89-8,CWA,0,Vesicant (sulfur mustard),C8H16Cl2OS2,45452,C8H16Cl2OS2,263.2,C(CSCCCl)OCCSCCCl,FWVCSXWHVOOTFJ-UHFFFAOYSA-N,O-Mustard,cas,,False,verified_cas
+2-Chloroethyl chloromethyl sulfide,2625-76-5,CWA,0,Vesicant (sulfur mustard),C3H6Cl2S,14557887,C3H6Cl2S,145.05,C(CCl)SCCl,HHQVSDLFPSFPST-UHFFFAOYSA-N,1-Chloro-2-((chloromethyl)thio)ethane,cas,,False,verified_cas
+Bis(2-chloroethylthio)methane,63869-13-6,CWA,0,Vesicant (sulfur mustard),C5H10Cl2S2,522107,C5H10Cl2S2,205.2,C(CCl)SCSCCCl,RKTJTTAEKCRXNL-UHFFFAOYSA-N,Bis(2-chloroethylthio)methane,cas,,False,verified_cas
+Nitrogen mustard HN-1,538-07-8,CWA,0,Vesicant (nitrogen mustard),C6H13Cl2N,10848,C6H13Cl2N,170.08,CCN(CCCl)CCCl,UQZPGHOJMQTOHB-UHFFFAOYSA-N,Bis(2-chloroethyl)ethylamine,cas,,False,verified_cas
+Nitrogen mustard HN-2,51-75-2,CWA,0,Vesicant (nitrogen mustard),C5H11Cl2N,4033,C5H11Cl2N,156.05,CN(CCCl)CCCl,HAWPXGHAZFHHAD-UHFFFAOYSA-N,Mechlorethamine,cas,,False,verified_cas
+Nitrogen mustard HN-3,555-77-1,CWA,0,Vesicant (nitrogen mustard),C6H12Cl3N,5561,C6H12Cl3N,204.5,C(CCl)N(CCCl)CCCl,FDAYLTPAFBGXAB-UHFFFAOYSA-N,Tris(2-chloroethyl)amine,cas,,False,verified_cas
+Lewisite 1 (L),541-25-3,CWA,0,Vesicant (arsenical),C2H2AsCl3,10923,C2H2AsCl3,207.31,C(=C[As](Cl)Cl)Cl,GIKLTQKNOXNBNY-UHFFFAOYSA-N,Lewisite,cas,,False,verified_cas
+Lewisite 2,40334-69-8,CWA,0,Vesicant (arsenical),C4H4AsCl3,5368106,C4H4AsCl3,233.35,C(=C/[As](Cl)/C=C/Cl)\Cl,YRFJGLQNTWLXKO-ZPUQHVIOSA-N,Lewisite 2,cas,,False,verified_cas
+Lewisite 3,40334-70-1,CWA,0,Vesicant (arsenical),C6H6AsCl3,5352143,C6H6AsCl3,259.4,C(=C/[As](/C=C/Cl)/C=C/Cl)\Cl,AOAVIJUEFJPSAI-GZDDRBCLSA-N,"Arsine, tris(2-chloroethenyl)-, (E,E,E)-",cas,,False,verified_cas
+Phenyldichloroarsine (PD),696-28-6,CWA,0,Vesicant (arsenical),C6H5AsCl2,12762,C6H5AsCl2,222.93,C1=CC=C(C=C1)[As](Cl)Cl,UDHDFEGCOJAVRE-UHFFFAOYSA-N,Phenyldichloroarsine,cas,,False,verified_cas
+Ethyldichloroarsine (ED),598-14-1,CWA,0,Vesicant (arsenical),C2H5AsCl2,11711,C2H5AsCl2,174.89,CC[As](Cl)Cl,LQSFEOMOHFPNEB-UHFFFAOYSA-N,Ethyldichloroarsine,cas,,False,verified_cas
+Methyldichloroarsine (MD),593-89-5,CWA,0,Vesicant (arsenical),CH3AsCl2,61142,CH3AsCl2,160.86,C[As](Cl)Cl,VXRMBBLRHSRVDK-UHFFFAOYSA-N,As-Methylarsonous dichloride,cas,,False,verified_cas
+Hydrogen cyanide (AC),74-90-8,CWA,0,Blood agent,CHN,768,CHN,27.025,C#N,LELOWRISYMNNSU-UHFFFAOYSA-N,Hydrogen Cyanide,cas,,False,verified_cas
+Cyanogen chloride (CK),506-77-4,CWA,0,Blood agent,CClN,10477,CClN,61.47,C(#N)Cl,QPJDMGCKMHUXFD-UHFFFAOYSA-N,Cyanogen Chloride,cas,,False,verified_cas
+Phosgene (CG),75-44-5,CWA,0,Choking agent,CCl2O,6371,CCl2O,98.91,C(=O)(Cl)Cl,YGYAWVDWMABLBF-UHFFFAOYSA-N,Phosgene,cas,,False,verified_cas
+Diphosgene (DP),503-38-8,CWA,0,Choking agent,C2Cl4O2,10426,C2Cl4O2,197.8,C(=O)(OC(Cl)(Cl)Cl)Cl,HCUYBXPSSCRKRF-UHFFFAOYSA-N,Diphosgene,cas,,False,verified_cas
+Chloropicrin (PS),76-06-2,CWA,0,Choking agent,CCl3NO2,6423,CCl3NO2,164.37,C([N+](=O)[O-])(Cl)(Cl)Cl,LFHISGNCFUNFFM-UHFFFAOYSA-N,Chloropicrin,cas,,False,verified_cas
+Perfluoroisobutene (PFIB),382-21-8,CWA,0,Schedule 2A toxic chemical,C4F8,61109,C4F8,200.03,C(=C(F)F)(C(F)(F)F)C(F)(F)F,DAFIBNSJXIGBQB-UHFFFAOYSA-N,"1,1,3,3,3-Pentafluoro-2-(trifluoromethyl)-1-propene",cas,,False,verified_cas
+BZ (3-Quinuclidinyl benzilate),6581-06-2,CWA,0,Incapacitating agent,C21H23NO3,23056,C21H23NO3,337.4,C1CN2CCC1C(C2)OC(=O)C(C3=CC=CC=C3)(C4=CC=CC=C4)O,HGMITUYOCPPQLE-UHFFFAOYSA-N,3-Quinuclidinyl benzilate,cas,,False,verified_cas
+Adamsite (DM),578-94-9,CWA,0,Vomiting agent (arsenical),C12H9AsClN,11362,C12H9AsClN,277.58,C1=CC=C2C(=C1)NC3=CC=CC=C3[As]2Cl,PBNSPNYJYOYWTA-UHFFFAOYSA-N,Adamsite,cas,,False,verified_cas
+DMMP,756-79-6,Simulant,1,G-agent simulant (phosphonate),C3H9O3P,12958,C3H9O3P,124.08,COP(=O)(C)OC,VONWDASPFIQPDY-UHFFFAOYSA-N,Dimethyl methylphosphonate,cas,,False,verified_cas
+DIMP,1445-75-6,Simulant,1,G-agent simulant (phosphonate),C7H17O3P,3073,C7H17O3P,180.18,CC(C)OP(=O)(C)OC(C)C,WOAFDHWYKSOANX-UHFFFAOYSA-N,Diisopropyl Methylphosphonate,cas,,False,verified_cas
+Triethyl phosphate (TEP),78-40-0,Simulant,1,G-agent simulant (phosphate),C6H15O4P,6535,C6H15O4P,182.15,CCOP(=O)(OCC)OCC,DQWPFSLDHJDLRL-UHFFFAOYSA-N,Triethyl Phosphate,cas,,False,verified_cas
+Trimethyl phosphate (TMP),512-56-1,Simulant,1,G-agent simulant (phosphate),C3H9O4P,10541,C3H9O4P,140.07,COP(=O)(OC)OC,WVLBCYQITXONBZ-UHFFFAOYSA-N,Trimethyl Phosphate,cas,,False,verified_cas
+Diisopropyl fluorophosphate (DFP),55-91-4,Simulant,1,G-agent simulant (fluorophosphate),C6H14FO3P,5936,C6H14FO3P,184.15,CC(C)OP(=O)(OC(C)C)F,MUCZHBLJLSDCSD-UHFFFAOYSA-N,Diisopropyl Fluorophosphate,cas,,False,verified_cas
+Triethyl phosphite,122-52-1,Simulant,1,G-agent simulant (phosphite),C6H15O3P,31215,C6H15O3P,166.16,CCOP(OCC)OCC,BDZBKCUKTQZUTL-UHFFFAOYSA-N,Triethyl phosphite,cas,,False,verified_cas
+Trimethyl phosphite,121-45-9,Simulant,1,G-agent simulant (phosphite),C3H9O3P,8472,C3H9O3P,124.08,COP(OC)OC,CYTQBVOFDCPGCX-UHFFFAOYSA-N,Trimethyl phosphite,cas,,False,verified_cas
+Triisopropyl phosphite,116-17-6,Simulant,1,G-agent simulant (phosphite),C9H21O3P,8304,C9H21O3P,208.23,CC(C)OP(OC(C)C)OC(C)C,SJHCUXCOGGKFAI-UHFFFAOYSA-N,Triisopropyl phosphite,cas,,False,verified_cas
+Diethyl ethylphosphonate (DEEP),78-38-6,Simulant,1,G-agent simulant (phosphonate),C6H15O3P,6534,C6H15O3P,166.16,CCOP(=O)(CC)OCC,AATNZNJRDOVKDD-UHFFFAOYSA-N,Diethyl ethylphosphonate,cas,,False,verified_cas
+Dimethyl 4-nitrophenyl phosphate (DMNP),950-35-6,Simulant,1,G-agent simulant (aryl phosphate),C8H10NO6P,13708,C8H10NO6P,247.14,COP(=O)(OC)OC1=CC=C(C=C1)[N+](=O)[O-],BAFQDKPJKOLXFZ-UHFFFAOYSA-N,Paraoxon methyl,cas,,False,verified_cas
+Dimethyl phenylphosphonate,2240-41-7,Simulant,1,G-agent simulant (phosphonate),C8H11O3P,75234,C8H11O3P,186.14,COP(=O)(C1=CC=CC=C1)OC,OXDOANYFRLHSML-UHFFFAOYSA-N,"Phosphonic acid, phenyl-, dimethyl ester",cas,,False,verified_cas
+Diethyl phenylphosphonate,1754-49-0,Simulant,1,G-agent simulant (phosphonate),C10H15O3P,15642,C10H15O3P,214.20,CCOP(=O)(C1=CC=CC=C1)OCC,VZEGPPPCKHRYGO-UHFFFAOYSA-N,"Phosphonic acid, phenyl-, diethyl ester",cas,,False,verified_cas
+Diethyl chlorophosphate,814-49-3,Simulant,1,G-agent simulant (chlorophosphate),C4H10ClO3P,13139,C4H10ClO3P,172.55,CCOP(=O)(OCC)Cl,LGTLXDJOAJDFLR-UHFFFAOYSA-N,Diethyl chlorophosphate,cas,,False,verified_cas
+Pinacolyl alcohol,464-07-3,Simulant,1,Schedule 2B precursor / simulant,C6H14O,10045,C6H14O,102.17,CC(C(C)(C)C)O,DFOXKPDFWGNLJU-UHFFFAOYSA-N,"3,3-Dimethyl-2-butanol",cas,,False,verified_cas
+Thiodiglycol,111-48-8,Simulant,1,Schedule 2B precursor / simulant,C4H10O2S,5447,C4H10O2S,122.19,C(CSCCO)O,YODZTKMDCQEPHD-UHFFFAOYSA-N,Thiodiglycol,cas,,False,verified_cas
+CEES (2-chloroethyl ethyl sulfide),693-07-2,Simulant,1,Sulfur mustard simulant,C4H9ClS,12733,C4H9ClS,124.63,CCSCCCl,GBNVXYXIRHSYEG-UHFFFAOYSA-N,2-Chloroethyl ethyl sulfide,cas,,False,verified_cas
+Diethyl sulfide,352-93-2,Simulant,1,Sulfur mustard simulant,C4H10S,9609,C4H10S,90.19,CCSCC,LJSQFQKUNVCTIA-UHFFFAOYSA-N,Ethyl sulfide,cas,,False,verified_cas
+Tetrahydrothiophene (THT),110-01-0,Simulant,1,Sulfur mustard simulant,C4H8S,1127,C4H8S,88.17,C1CCSC1,RAOIDOHSFRTOEL-UHFFFAOYSA-N,Tetrahydrothiophene,cas,,False,verified_cas
+Di-n-propyl sulfide,111-47-7,Simulant,1,Sulfur mustard simulant,C6H14S,8118,C6H14S,118.24,CCCSCCC,ZERULLAPCVRMCO-UHFFFAOYSA-N,Propyl sulfide,cas,,False,verified_cas
+BCEE (bis(2-chloroethyl) ether),111-44-4,Simulant,1,Sulfur mustard simulant,C4H8Cl2O,8115,C4H8Cl2O,143.01,C(CCl)OCCCl,ZNSMNVMLTJELDZ-UHFFFAOYSA-N,Bis(2-chloroethyl) ether,cas,,False,verified_cas
+"1,5-Dichloropentane",628-76-2,Simulant,1,Sulfur mustard simulant,C5H10Cl2,12353,C5H10Cl2,141.04,C(CCCl)CCCl,LBKDGROORAKTLC-UHFFFAOYSA-N,"1,5-Dichloropentane",cas,,False,verified_cas
+2-(Ethylthio)ethanol,110-77-0,Simulant,1,Sulfur mustard simulant,C4H10OS,8075,C4H10OS,106.19,CCSCCO,LNRIEBFNWGMXKP-UHFFFAOYSA-N,2-(Ethylthio)ethanol,cas,,False,verified_cas
+Methyl salicylate,119-36-8,Simulant,1,Miscellaneous simulant,C8H8O3,4133,C8H8O3,152.15,COC(=O)C1=CC=CC=C1O,OSWPMRLSEDHDFF-UHFFFAOYSA-N,Methyl Salicylate,cas,,False,verified_cas
+Methyl benzoate,93-58-3,Simulant,1,Miscellaneous simulant,C8H8O2,7150,C8H8O2,136.15,COC(=O)C1=CC=CC=C1,QPJVMBTYPHYUOC-UHFFFAOYSA-N,Methyl Benzoate,cas,,False,verified_cas
+Malathion,121-75-5,Pesticide,2,Phosphorodithioate insecticide,C10H19O6PS2,4004,C10H19O6PS2,330.4,CCOC(=O)CC(C(=O)OCC)SP(=S)(OC)OC,JXSJBGJIGXNWCI-UHFFFAOYSA-N,Malathion,cas,,False,verified_cas
+Chlorpyrifos,2921-88-2,Pesticide,2,Phosphorothioate insecticide,C9H11Cl3NO3PS,2730,C9H11Cl3NO3PS,350.6,CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl,SBPBAQFWLVIOKP-UHFFFAOYSA-N,Chlorpyrifos,cas,,False,verified_cas
+Chlorpyrifos-methyl,5598-13-0,Pesticide,2,Phosphorothioate insecticide,C7H7Cl3NO3PS,21803,C7H7Cl3NO3PS,322.5,COP(=S)(OC)OC1=NC(=C(C=C1Cl)Cl)Cl,HRBKVYFZANMGRE-UHFFFAOYSA-N,Chlorpyrifos-methyl,cas,,False,verified_cas
+Parathion,56-38-2,Pesticide,2,Phosphorothioate insecticide,C10H14NO5PS,991,C10H14NO5PS,291.26,CCOP(=S)(OCC)OC1=CC=C(C=C1)[N+](=O)[O-],LCCNCVORNKJIRZ-UHFFFAOYSA-N,Parathion,cas,,False,verified_cas
+Methyl parathion,298-00-0,Pesticide,2,Phosphorothioate insecticide,C8H10NO5PS,4130,C8H10NO5PS,263.21,COP(=S)(OC)OC1=CC=C(C=C1)[N+](=O)[O-],RLBIQVVOMOPOHC-UHFFFAOYSA-N,Methyl Parathion,cas,,False,verified_cas
+Diazinon,333-41-5,Pesticide,2,Phosphorothioate insecticide,C12H21N2O3PS,3017,C12H21N2O3PS,304.35,CCOP(=S)(OCC)OC1=NC(=NC(=C1)C)C(C)C,FHIVAFMUCKRCQO-UHFFFAOYSA-N,Diazinon,cas,,False,verified_cas
+Fenthion,55-38-9,Pesticide,2,Phosphorothioate insecticide,C10H15O3PS2,3346,C10H15O3PS2,278.3,CC1=C(C=CC(=C1)OP(=S)(OC)OC)SC,PNVJTZOFSHSLTO-UHFFFAOYSA-N,Fenthion,cas,,False,verified_cas
+Dimethoate,60-51-5,Pesticide,2,Phosphorodithioate insecticide,C5H12NO3PS2,3082,C5H12NO3PS2,229.3,CNC(=O)CSP(=S)(OC)OC,MCWXGJITAZMZEV-UHFFFAOYSA-N,Dimethoate,cas,,False,verified_cas
+Phosmet,732-11-6,Pesticide,2,Phosphorodithioate insecticide,C11H12NO4PS2,12901,C11H12NO4PS2,317.3,COP(=S)(OC)SCN1C(=O)C2=CC=CC=C2C1=O,LMNZTLDVJIUSHT-UHFFFAOYSA-N,Phosmet,cas,,False,verified_cas
+Trichlorfon,52-68-6,Pesticide,2,Phosphonate insecticide,C4H8Cl3O4P,5853,C4H8Cl3O4P,257.43,COP(=O)(C(C(Cl)(Cl)Cl)O)OC,NFACJZMKEDPNKN-UHFFFAOYSA-N,Trichlorfon,cas,,False,verified_cas
+Acephate,30560-19-1,Pesticide,2,Phosphoramidothioate insecticide,C4H10NO3PS,1982,C4H10NO3PS,183.17,CC(=O)NP(=O)(OC)SC,YASYVMFAVPKPKE-UHFFFAOYSA-N,Acephate,cas,,False,verified_cas
+Methamidophos,10265-92-6,Pesticide,2,Phosphoramidothioate insecticide,C2H8NO2PS,4096,C2H8NO2PS,141.13,COP(=O)(N)SC,NNKVPIKMPCQWCG-UHFFFAOYSA-N,Methamidophos,cas,,False,verified_cas
+Omethoate,1113-02-6,Pesticide,2,Phosphorothioate insecticide,C5H12NO4PS,14210,C5H12NO4PS,213.19,CNC(=O)CSP(=O)(OC)OC,PZXOQEXFMJCDPG-UHFFFAOYSA-N,Omethoate,cas,,False,verified_cas
+Glyphosate,1071-83-6,Pesticide,2,Phosphonate herbicide,C3H8NO5P,3496,C3H8NO5P,169.07,C(C(=O)O)NCP(=O)(O)O,XDDAORKBJWWYJS-UHFFFAOYSA-N,Glyphosate,cas,,False,verified_cas
+Glufosinate,51276-47-2,Pesticide,2,Phosphinate herbicide,C5H12NO4P,4794,C5H12NO4P,181.13,CP(=O)(CCC(C(=O)O)N)O,IAJOBQBIJHVGMQ-UHFFFAOYSA-N,Glufosinate,cas,,False,verified_cas
+Fenitrothion,122-14-5,Pesticide,2,Phosphorothioate insecticide,C9H12NO5PS,31200,C9H12NO5PS,277.24,CC1=C(C=CC(=C1)OP(=S)(OC)OC)[N+](=O)[O-],ZNOLGFHPUIJIMJ-UHFFFAOYSA-N,Fenitrothion,cas,,False,verified_cas
+Azinphos-methyl,86-50-0,Pesticide,2,Phosphorodithioate insecticide,C10H12N3O3PS2,2268,C10H12N3O3PS2,317.3,COP(=S)(OC)SCN1C(=O)C2=CC=CC=C2N=N1,CJJOSEISRRTUQB-UHFFFAOYSA-N,Azinphos-Methyl,cas,,False,verified_cas
+Profenofos,41198-08-7,Pesticide,2,Phosphorothioate insecticide,C11H15BrClO3PS,38779,C11H15BrClO3PS,373.63,CCCSP(=O)(OCC)OC1=C(C=C(C=C1)Br)Cl,QYMMJNLHFKGANY-UHFFFAOYSA-N,Profenofos,cas,,False,verified_cas
+Quinalphos,13593-03-8,Pesticide,2,Phosphorothioate insecticide,C12H15N2O3PS,26124,C12H15N2O3PS,298.30,CCOP(=S)(OCC)OC1=NC2=CC=CC=C2N=C1,JYQUHIFYBATCCY-UHFFFAOYSA-N,Quinalphos,cas,,False,verified_cas
+Ethoprophos,13194-48-4,Pesticide,2,Phosphorodithioate nematicide,C8H19O2PS2,3289,C8H19O2PS2,242.3,CCCSP(=O)(OCC)SCCC,VJYFKVYYMZPMAB-UHFFFAOYSA-N,Ethoprophos,cas,,False,verified_cas
+Triazophos,24017-47-8,Pesticide,2,Phosphorothioate insecticide,C12H16N3O3PS,32184,C12H16N3O3PS,313.31,CCOP(=S)(OCC)OC1=NN(C=N1)C2=CC=CC=C2,AMFGTOFWMRQMEM-UHFFFAOYSA-N,Triazophos,cas,,False,verified_cas
+Methidathion,950-37-8,Pesticide,2,Phosphorodithioate insecticide,C6H11N2O4PS3,13709,C6H11N2O4PS3,302.3,COC1=NN(C(=O)S1)CSP(=S)(OC)OC,MEBQXILRKZHVCX-UHFFFAOYSA-N,Methidathion,cas,,False,verified_cas
+Phorate,298-02-2,Pesticide,2,Phosphorodithioate insecticide,C7H17O2PS3,4790,C7H17O2PS3,260.4,CCOP(=S)(OCC)SCSCC,BULVZWIRKLYCBC-UHFFFAOYSA-N,Phorate,cas,,False,verified_cas
+Disulfoton,298-04-4,Pesticide,2,Phosphorodithioate insecticide,C8H19O2PS3,3118,C8H19O2PS3,274.4,CCOP(=S)(OCC)SCCSCC,DOFZAZXDOSGAJZ-UHFFFAOYSA-N,Disulfoton,cas,,False,verified_cas
+Terbufos,13071-79-9,Pesticide,2,Phosphorodithioate insecticide,C9H21O2PS3,25670,C9H21O2PS3,288.4,CCOP(=S)(OCC)SCSC(C)(C)C,XLNZEKHULJKQBA-UHFFFAOYSA-N,Terbufos,cas,,False,verified_cas
+Oxydemeton-methyl,301-12-2,Pesticide,2,Phosphorothioate insecticide,C6H15O4PS2,4618,C6H15O4PS2,246.3,CCS(=O)CCSP(=O)(OC)OC,PMCVMORKVPSKHZ-UHFFFAOYSA-N,Oxydemeton-methyl,cas,,False,verified_cas
+Demeton-S-methyl,919-86-8,Pesticide,2,Phosphorothioate insecticide,C6H15O3PS2,13526,C6H15O3PS2,230.3,CCSCCSP(=O)(OC)OC,WEBQKRLKWNIYKK-UHFFFAOYSA-N,Demeton-S-methyl,cas,,False,verified_cas
+Chlorfenvinphos,470-90-6,Pesticide,2,Vinyl phosphate insecticide,C12H14Cl3O4P,10107,C12H14Cl3O4P,359.6,CCOP(=O)(OCC)OC(=CCl)C1=C(C=C(C=C1)Cl)Cl,FSAVDKDHPDSCTO-UHFFFAOYSA-N,Chlorfenvinphos,cas,,False,verified_cas
+Dichlorvos,62-73-7,Pesticide,2,Vinyl phosphate insecticide,C4H7Cl2O4P,3039,C4H7Cl2O4P,220.97,COP(=O)(OC)OC=C(Cl)Cl,OEBRKCOSUFCWJD-UHFFFAOYSA-N,Dichlorvos,cas,,False,verified_cas
+Pirimiphos-methyl,29232-93-7,Pesticide,2,Phosphorothioate insecticide,C11H20N3O3PS,34526,C11H20N3O3PS,305.34,CCN(CC)C1=NC(=CC(=N1)OP(=S)(OC)OC)C,QHOQHJPRIBSPCY-UHFFFAOYSA-N,Pirimiphos-methyl,cas,,False,verified_cas
+Temephos,3383-96-8,Pesticide,2,Phosphorothioate larvicide,C16H20O6P2S3,5392,C16H20O6P2S3,466.5,COP(=S)(OC)OC1=CC=C(C=C1)SC2=CC=C(C=C2)OP(=S)(OC)OC,WWJZWCUNLNYYAU-UHFFFAOYSA-N,Temephos,cas,,False,verified_cas
+Tribufos (DEF),78-48-8,Pesticide,2,Phosphorotrithioate defoliant,C12H27OPS3,5125,C12H27OPS3,314.5,CCCCSP(=O)(SCCCC)SCCCC,ZOKXUAHZSKEQSS-UHFFFAOYSA-N,Tribufos,cas,,False,verified_cas
+Ethion,563-12-2,Pesticide,2,Phosphorodithioate insecticide,C9H22O4P2S4,3286,C9H22O4P2S4,384.5,CCOP(=S)(OCC)SCSP(=S)(OCC)OCC,RIZMRRKBZQXFOY-UHFFFAOYSA-N,Ethion,cas,,False,verified_cas
+Phosalone,2310-17-0,Pesticide,2,Phosphorodithioate insecticide,C12H15ClNO4PS2,4793,C12H15ClNO4PS2,367.8,CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,IOUNQDKNJZEDEP-UHFFFAOYSA-N,Phosalone,cas,,False,verified_cas
+Propetamphos,31218-83-4,Pesticide,2,Phosphoramidothioate insecticide,C10H20NO4PS,5372405,C10H20NO4PS,281.31,CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,BZNDWPRGXNILMS-VQHVLOKHSA-N,Propetamphos,cas,,False,verified_cas
+Sulfotep,3689-24-5,Pesticide,2,Phosphorothioate insecticide,C8H20O5P2S2,19395,C8H20O5P2S2,322.3,CCOP(=S)(OCC)OP(=S)(OCC)OCC,XIUROWKZWPIAIB-UHFFFAOYSA-N,Sulfotep,cas,,False,verified_cas
+Prothiofos,34643-46-4,Pesticide,2,Phosphorodithioate insecticide,C11H15Cl2O2PS2,36870,C11H15Cl2O2PS2,345.2,CCCSP(=S)(OCC)OC1=C(C=C(C=C1)Cl)Cl,FITIWKDOCAUBQD-UHFFFAOYSA-N,Prothiofos,cas,,False,verified_cas
+Pyridaphenthion,119-12-0,Pesticide,2,Phosphorothioate insecticide,C14H17N2O4PS,8381,C14H17N2O4PS,340.34,CCOP(=S)(OCC)OC1=NN(C(=O)C=C1)C2=CC=CC=C2,CXJSOEPQXUCJSA-UHFFFAOYSA-N,Pyridaphenthion,cas,,False,verified_cas
+Fosthiazate,98886-44-3,Pesticide,2,Phosphorothiolate nematicide,C9H18NO3PS2,91758,C9H18NO3PS2,283.4,CCC(C)SP(=O)(N1CCSC1=O)OCC,DUFVKSUJRWYZQP-UHFFFAOYSA-N,Fosthiazate,cas,,False,verified_cas

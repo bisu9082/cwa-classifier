@@ -1,60 +1,106 @@
-name,cas,cid,class,class_id,formula,mw_g_mol
-Tabun (GA),77-81-6,6500,CWA,0,C5H11N2O2P,162.13
-Sarin (GB),107-44-8,7871,CWA,0,C4H10FO2P,140.09
-Soman (GD),96-64-0,7305,CWA,0,C7H16FO2P,182.17
-Cyclosarin (GF),329-99-7,9578,CWA,0,C7H14FO2P,180.16
-VX,50782-69-9,39793,CWA,0,C11H26NO2PS,267.37
-Russian VX (VR),159939-87-4,46923234,CWA,0,C11H26NO2PS,267.37
-Novichok A-230,2715416-64-9,129631095,CWA,0,C6H6AsNO4,231.04
-Novichok A-232,2715416-66-1,129631097,CWA,0,C14H17N3O,243.30
-Novichok A-234,2715416-67-2,129631098,CWA,0,C10H9N3O2,203.20
-Sulfur Mustard (HD),505-60-2,10442,CWA,0,C4H8Cl2S,159.07
-Nitrogen Mustard HN-1,538-07-8,10067,CWA,0,C6H13Cl2N,170.08
-Nitrogen Mustard HN-2,51-75-2,4033,CWA,0,C5H11Cl2N,156.05
-Lewisite (L),541-25-3,5372952,CWA,0,C2H2AsCl3,207.32
-Hydrogen Cyanide (AC),74-90-8,768,CWA,0,CHN,27.03
-Cyanogen Chloride (CK),506-77-4,10477,CWA,0,CClN,61.47
-Phosgene (CG),75-44-5,6371,CWA,0,CCl2O,98.91
-Diphosgene (DP),503-38-8,12120,CWA,0,C2Cl4O2,197.83
-BZ (3-Quinuclidinyl benzilate),6581-06-2,12681,CWA,0,C21H23NO3,337.41
-DMMP,756-79-6,12284,Simulant,1,C3H9O3P,124.08
-DIMP,1445-75-6,12813,Simulant,1,C7H17O3P,180.19
-TEP (Triethyl phosphate),78-40-0,6449,Simulant,1,C6H15O4P,182.16
-TMP (Trimethyl phosphate),512-56-1,10296,Simulant,1,C3H9O4P,140.07
-DFP (Diisopropyl fluorophosphate),55-91-4,5936,Simulant,1,C6H14FO3P,184.15
-Triethyl phosphite,122-52-1,8414,Simulant,1,C6H15O3P,166.16
-Trimethyl phosphite,121-45-9,9296,Simulant,1,C3H9O3P,124.07
-DEEP (Diethyl ethylphosphonate),78-38-6,6534,Simulant,1,C6H15O3P,166.16
-DMNP,950-35-6,13326,Simulant,1,C7H14NO6P,239.16
-Triisopropyl phosphite,116-17-6,10840,Simulant,1,C9H21O3P,208.23
-Dimethyl phenyl phosphonate,2240-41-7,16212,Simulant,1,C8H11O3P,186.15
-CEES,693-07-2,12367,Simulant,1,C4H9ClS,124.63
-Diethyl sulfide,352-93-2,9609,Simulant,1,C4H10S,90.19
-THT (Tetrahydrothiophene),110-01-0,8862,Simulant,1,C4H8S,88.17
-Di-n-propyl sulfide,111-47-7,12054,Simulant,1,C6H14S,118.24
-BCEE,111-44-4,8057,Simulant,1,C4H8Cl2O,143.01
-Methyl salicylate,119-36-8,4133,Simulant,1,C8H8O3,152.15
-Malathion,121-75-5,4895,Pesticide,2,C10H19O6PS2,330.36
-Chlorpyrifos,2921-88-2,2730,Pesticide,2,C9H11Cl3NO3PS,350.59
-Parathion,56-38-2,991,Pesticide,2,C10H14NO5PS,291.26
-Methyl Parathion,298-00-0,4130,Pesticide,2,C8H10NO5PS,263.21
-Diazinon,333-41-5,3017,Pesticide,2,C12H21N2O3PS,304.35
-Fenthion,55-38-9,3253,Pesticide,2,C10H15O3PS2,278.33
-Dimethoate,60-51-5,3082,Pesticide,2,C5H12NO3PS2,229.26
-Phosmet,732-11-6,12901,Pesticide,2,C11H12NO4PS2,317.32
-Trichlorfon,52-68-6,5855,Pesticide,2,C4H8Cl3O4P,257.44
-Acephate,30560-19-1,1989,Pesticide,2,C4H10NO3PS,183.17
-Glyphosate,1071-83-6,3496,Pesticide,2,C3H8NO5P,169.07
-Fenitrothion,122-14-5,3569,Pesticide,2,C9H12NO5PS,277.25
-Azinphos-methyl,86-50-0,2268,Pesticide,2,C10H12N3O3PS,317.32
-Profenofos,41198-08-7,38592,Pesticide,2,C11H15BrClO3PS,373.63
-Quinalphos,13593-03-8,17398,Pesticide,2,C12H15N2O3PS,298.30
-Ethoprophos,13194-48-4,2790,Pesticide,2,C8H19O2PS2,242.34
-Triazophos,24017-47-8,30950,Pesticide,2,C12H16N3O3PS,313.31
-Methidathion,950-37-8,5367,Pesticide,2,C6H11N2O4PS3,302.33
-Phorate,298-02-2,4739,Pesticide,2,C7H17O2PS3,260.38
-Disulfoton,298-04-4,3075,Pesticide,2,C8H19O2PS3,274.41
-Terbufos,13071-79-9,16397,Pesticide,2,C9H21O2PS3,288.43
-Oxydemeton-methyl,301-12-2,5501,Pesticide,2,C6H15O4PS2,246.30
-Demeton-S-methyl,919-86-8,12800,Pesticide,2,C6H15O3PS2,230.30
-Chlorfenvinphos,470-90-6,9579,Pesticide,2,C12H14Cl3O4P,359.57
+name,cas,cid,class,class_id,subclass,formula
+Tabun (GA),77-81-6,,CWA,0,G-series nerve agent,C5H11N2O2P
+Sarin (GB),107-44-8,,CWA,0,G-series nerve agent,C4H10FO2P
+Soman (GD),96-64-0,,CWA,0,G-series nerve agent,C7H16FO2P
+Cyclosarin (GF),329-99-7,,CWA,0,G-series nerve agent,C7H14FO2P
+Ethylsarin (GE),1189-87-3,,CWA,0,G-series nerve agent,C5H12FO2P
+Chlorosarin,1445-76-7,,CWA,0,Schedule 1B precursor,C4H10ClO2P
+Chlorosoman,7040-57-5,,CWA,0,Schedule 1B precursor,C7H16ClO2P
+Methylphosphonyl difluoride (DF),676-99-3,,CWA,0,Schedule 1B precursor,CH3F2OP
+VX,50782-69-9,,CWA,0,V-series nerve agent,C11H26NO2PS
+Russian VX (VR),159939-87-4,,CWA,0,V-series nerve agent,C11H26NO2PS
+VE,21738-25-0,,CWA,0,V-series nerve agent,C10H24NO2PS
+VG (Amiton),78-53-5,,CWA,0,V-series nerve agent,C10H24NO3PS
+VM,21770-86-5,,CWA,0,V-series nerve agent,C9H22NO2PS
+QL,57856-11-8,,CWA,0,Schedule 1B precursor,C11H26NO2P
+A-230 Nerve Agent,,160100773,CWA,0,Novichok (Schedule 1A.13),C7H16FN2OP
+A-232,2387496-04-8,,CWA,0,Novichok (Schedule 1A.14),C7H16FN2O2P
+A-234,2387496-06-0,,CWA,0,Novichok (Schedule 1A.14),C8H18FN2O2P
+Methyl-(bis(diethylamino)methylene)phosphonamidofluoridate,2387496-14-0,,CWA,0,Novichok (Schedule 1A.15),C10H23FN3OP
+N-(1-(Di-n-decylamino)-n-decylidene)-P-decylphosphonamidic fluoride,2387495-99-8,,CWA,0,Novichok (Schedule 1A.13 exemplar),C40H82FN2OP
+Decyl N-(1-(didecylamino)decylidene)phosphoramidofluoridate,2387496-00-4,,CWA,0,Novichok (Schedule 1A.14 exemplar),C40H82FN2O2P
+Sulfur mustard (HD),505-60-2,,CWA,0,Vesicant (sulfur mustard),C4H8Cl2S
+Sesquimustard (Q),3563-36-8,,CWA,0,Vesicant (sulfur mustard),C6H12Cl2S2
+O-Mustard (T),63918-89-8,,CWA,0,Vesicant (sulfur mustard),C8H16Cl2OS2
+2-Chloroethyl chloromethyl sulfide,2625-76-5,,CWA,0,Vesicant (sulfur mustard),C3H6Cl2S
+Bis(2-chloroethylthio)methane,63869-13-6,,CWA,0,Vesicant (sulfur mustard),C5H10Cl2S2
+Nitrogen mustard HN-1,538-07-8,,CWA,0,Vesicant (nitrogen mustard),C6H13Cl2N
+Nitrogen mustard HN-2,51-75-2,,CWA,0,Vesicant (nitrogen mustard),C5H11Cl2N
+Nitrogen mustard HN-3,555-77-1,,CWA,0,Vesicant (nitrogen mustard),C6H12Cl3N
+Lewisite 1 (L),541-25-3,,CWA,0,Vesicant (arsenical),C2H2AsCl3
+Lewisite 2,40334-69-8,,CWA,0,Vesicant (arsenical),C4H4AsCl3
+Lewisite 3,40334-70-1,,CWA,0,Vesicant (arsenical),C6H6AsCl3
+Phenyldichloroarsine (PD),696-28-6,,CWA,0,Vesicant (arsenical),C6H5AsCl2
+Ethyldichloroarsine (ED),598-14-1,,CWA,0,Vesicant (arsenical),C2H5AsCl2
+Methyldichloroarsine (MD),593-89-5,,CWA,0,Vesicant (arsenical),CH3AsCl2
+Hydrogen cyanide (AC),74-90-8,,CWA,0,Blood agent,CHN
+Cyanogen chloride (CK),506-77-4,,CWA,0,Blood agent,CClN
+Phosgene (CG),75-44-5,,CWA,0,Choking agent,CCl2O
+Diphosgene (DP),503-38-8,,CWA,0,Choking agent,C2Cl4O2
+Chloropicrin (PS),76-06-2,,CWA,0,Choking agent,CCl3NO2
+Perfluoroisobutene (PFIB),382-21-8,,CWA,0,Schedule 2A toxic chemical,C4F8
+BZ (3-Quinuclidinyl benzilate),6581-06-2,,CWA,0,Incapacitating agent,C21H23NO3
+Adamsite (DM),578-94-9,,CWA,0,Vomiting agent (arsenical),C12H9AsClN
+DMMP,756-79-6,,Simulant,1,G-agent simulant (phosphonate),C3H9O3P
+DIMP,1445-75-6,,Simulant,1,G-agent simulant (phosphonate),C7H17O3P
+Triethyl phosphate (TEP),78-40-0,,Simulant,1,G-agent simulant (phosphate),C6H15O4P
+Trimethyl phosphate (TMP),512-56-1,,Simulant,1,G-agent simulant (phosphate),C3H9O4P
+Diisopropyl fluorophosphate (DFP),55-91-4,,Simulant,1,G-agent simulant (fluorophosphate),C6H14FO3P
+Triethyl phosphite,122-52-1,,Simulant,1,G-agent simulant (phosphite),C6H15O3P
+Trimethyl phosphite,121-45-9,,Simulant,1,G-agent simulant (phosphite),C3H9O3P
+Triisopropyl phosphite,116-17-6,,Simulant,1,G-agent simulant (phosphite),C9H21O3P
+Diethyl ethylphosphonate (DEEP),78-38-6,,Simulant,1,G-agent simulant (phosphonate),C6H15O3P
+Dimethyl 4-nitrophenyl phosphate (DMNP),950-35-6,,Simulant,1,G-agent simulant (aryl phosphate),C8H10NO6P
+Dimethyl phenylphosphonate,2240-41-7,,Simulant,1,G-agent simulant (phosphonate),C8H11O3P
+Diethyl phenylphosphonate,1754-49-0,,Simulant,1,G-agent simulant (phosphonate),C10H15O3P
+Diethyl chlorophosphate,814-49-3,,Simulant,1,G-agent simulant (chlorophosphate),C4H10ClO3P
+Pinacolyl alcohol,464-07-3,,Simulant,1,Schedule 2B precursor / simulant,C6H14O
+Thiodiglycol,111-48-8,,Simulant,1,Schedule 2B precursor / simulant,C4H10O2S
+CEES (2-chloroethyl ethyl sulfide),693-07-2,,Simulant,1,Sulfur mustard simulant,C4H9ClS
+Diethyl sulfide,352-93-2,,Simulant,1,Sulfur mustard simulant,C4H10S
+Tetrahydrothiophene (THT),110-01-0,,Simulant,1,Sulfur mustard simulant,C4H8S
+Di-n-propyl sulfide,111-47-7,,Simulant,1,Sulfur mustard simulant,C6H14S
+BCEE (bis(2-chloroethyl) ether),111-44-4,,Simulant,1,Sulfur mustard simulant,C4H8Cl2O
+"1,5-Dichloropentane",628-76-2,,Simulant,1,Sulfur mustard simulant,C5H10Cl2
+2-(Ethylthio)ethanol,110-77-0,,Simulant,1,Sulfur mustard simulant,C4H10OS
+Methyl salicylate,119-36-8,,Simulant,1,Miscellaneous simulant,C8H8O3
+Methyl benzoate,93-58-3,,Simulant,1,Miscellaneous simulant,C8H8O2
+Malathion,121-75-5,,Pesticide,2,Phosphorodithioate insecticide,C10H19O6PS2
+Chlorpyrifos,2921-88-2,,Pesticide,2,Phosphorothioate insecticide,C9H11Cl3NO3PS
+Chlorpyrifos-methyl,5598-13-0,,Pesticide,2,Phosphorothioate insecticide,C7H7Cl3NO3PS
+Parathion,56-38-2,,Pesticide,2,Phosphorothioate insecticide,C10H14NO5PS
+Methyl parathion,298-00-0,,Pesticide,2,Phosphorothioate insecticide,C8H10NO5PS
+Diazinon,333-41-5,,Pesticide,2,Phosphorothioate insecticide,C12H21N2O3PS
+Fenthion,55-38-9,,Pesticide,2,Phosphorothioate insecticide,C10H15O3PS2
+Dimethoate,60-51-5,,Pesticide,2,Phosphorodithioate insecticide,C5H12NO3PS2
+Phosmet,732-11-6,,Pesticide,2,Phosphorodithioate insecticide,C11H12NO4PS2
+Trichlorfon,52-68-6,,Pesticide,2,Phosphonate insecticide,C4H8Cl3O4P
+Acephate,30560-19-1,,Pesticide,2,Phosphoramidothioate insecticide,C4H10NO3PS
+Methamidophos,10265-92-6,,Pesticide,2,Phosphoramidothioate insecticide,C2H8NO2PS
+Omethoate,1113-02-6,,Pesticide,2,Phosphorothioate insecticide,C5H12NO4PS
+Glyphosate,1071-83-6,,Pesticide,2,Phosphonate herbicide,C3H8NO5P
+Glufosinate,51276-47-2,,Pesticide,2,Phosphinate herbicide,C5H12NO4P
+Fenitrothion,122-14-5,,Pesticide,2,Phosphorothioate insecticide,C9H12NO5PS
+Azinphos-methyl,86-50-0,,Pesticide,2,Phosphorodithioate insecticide,C10H12N3O3PS2
+Profenofos,41198-08-7,,Pesticide,2,Phosphorothioate insecticide,C11H15BrClO3PS
+Quinalphos,13593-03-8,,Pesticide,2,Phosphorothioate insecticide,C12H15N2O3PS
+Ethoprophos,13194-48-4,,Pesticide,2,Phosphorodithioate nematicide,C8H19O2PS2
+Triazophos,24017-47-8,,Pesticide,2,Phosphorothioate insecticide,C12H16N3O3PS
+Methidathion,950-37-8,,Pesticide,2,Phosphorodithioate insecticide,C6H11N2O4PS3
+Phorate,298-02-2,,Pesticide,2,Phosphorodithioate insecticide,C7H17O2PS3
+Disulfoton,298-04-4,,Pesticide,2,Phosphorodithioate insecticide,C8H19O2PS3
+Terbufos,13071-79-9,,Pesticide,2,Phosphorodithioate insecticide,C9H21O2PS3
+Oxydemeton-methyl,301-12-2,,Pesticide,2,Phosphorothioate insecticide,C6H15O4PS2
+Demeton-S-methyl,919-86-8,,Pesticide,2,Phosphorothioate insecticide,C6H15O3PS2
+Chlorfenvinphos,470-90-6,,Pesticide,2,Vinyl phosphate insecticide,C12H14Cl3O4P
+Dichlorvos,62-73-7,,Pesticide,2,Vinyl phosphate insecticide,C4H7Cl2O4P
+Pirimiphos-methyl,29232-93-7,,Pesticide,2,Phosphorothioate insecticide,C11H20N3O3PS
+Temephos,3383-96-8,,Pesticide,2,Phosphorothioate larvicide,C16H20O6P2S3
+Tribufos (DEF),78-48-8,,Pesticide,2,Phosphorotrithioate defoliant,C12H27OPS3
+Ethion,563-12-2,,Pesticide,2,Phosphorodithioate insecticide,C9H22O4P2S4
+Phosalone,2310-17-0,,Pesticide,2,Phosphorodithioate insecticide,C12H15ClNO4PS2
+Propetamphos,31218-83-4,,Pesticide,2,Phosphoramidothioate insecticide,C10H20NO4PS
+Sulfotep,3689-24-5,,Pesticide,2,Phosphorothioate insecticide,C8H20O5P2S2
+Prothiofos,34643-46-4,,Pesticide,2,Phosphorodithioate insecticide,C11H15Cl2O2PS2
+Pyridaphenthion,119-12-0,,Pesticide,2,Phosphorothioate insecticide,C14H17N2O4PS
+Fosthiazate,98886-44-3,,Pesticide,2,Phosphorothiolate nematicide,C9H18NO3PS2
