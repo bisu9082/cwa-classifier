@@ -22,29 +22,65 @@ plt.rcParams.update({"font.size": 11, "font.family": "DejaVu Sans",
 
 hold = pd.read_csv(BUILD / "holdout.csv"); probe = pd.read_csv(BUILD / "probe.csv")
 
-def provenance(df, dist, thr):
-    """Classify each compound by which gate branch decides it."""
+BRANCHES = ("Out-of-scope skeleton → unknown",
+            "Schedule 1 → CWA (mandatory)",
+            "Annex exemption → CWA forbidden",
+            "Out-of-domain → unknown",
+            "Classifier decides (Sch. 2/3, unlisted)")
+
+
+def provenance(df, dist, thr, ml_pred):
+    """Classify each compound by which gate branch decides it.
+
+    The branch order and conditions mirror G.apply_gate() exactly, including
+    the exemption branch, which binds only where the classifier would
+    otherwise have returned the regulated class; counting it on the exemption
+    flag alone overstates how often statutory authority actually acts.
+    """
     s = df["cwc_schedule"].values
-    ex = (df["cwc_exempt"].astype(str).str.len() > 0).values if "cwc_exempt" in df else np.zeros(len(df), bool)
-    cnt = {"Schedule 1 → CWA (mandatory)": 0, "Annex exemption → CWA forbidden": 0,
-           "Out-of-domain → unknown": 0, "Classifier decides (Sch. 2/3, unlisted)": 0}
+    smi = df["smiles"].values
+    ex = (df["cwc_exempt"].astype(str).str.len() > 0).values if "cwc_exempt" in df \
+        else np.zeros(len(df), bool)
+    cnt = {b: 0 for b in BRANCHES}
     for i in range(len(df)):
-        if s[i] == 1: cnt["Schedule 1 → CWA (mandatory)"] += 1
-        elif ex[i]: cnt["Annex exemption → CWA forbidden"] += 1
-        elif s[i] == 0 and dist[i] > thr: cnt["Out-of-domain → unknown"] += 1
-        else: cnt["Classifier decides (Sch. 2/3, unlisted)"] += 1
+        if G.a3_out_of_scope(smi[i]):
+            cnt["Out-of-scope skeleton → unknown"] += 1
+        elif s[i] == 1:
+            cnt["Schedule 1 → CWA (mandatory)"] += 1
+        elif ex[i] and ml_pred[i] == G.CWA:
+            cnt["Annex exemption → CWA forbidden"] += 1
+        elif s[i] == 0 and dist[i] > thr:
+            cnt["Out-of-domain → unknown"] += 1
+        else:
+            cnt["Classifier decides (Sch. 2/3, unlisted)"] += 1
     return cnt
+
+
+def ml_predictions(corp, df, scheme="F3", clf_name="RF"):
+    """Predictions of the reference head used for the provenance accounting."""
+    cols = G.SCHEMES[scheme]
+    clf = G.make_clf(clf_name, proba=True)
+    clf.fit(corp[cols].astype(float).values,
+            corp["label_L2"].astype(int).values)
+    return clf.predict(df[cols].astype(float).values)
 
 corp = pd.read_csv(BUILD / "corpus.csv")
 trf = [G.morgan(x) for x in corp["smiles"]]; trf = [f for f in trf if f]
 thr = G.ad_threshold(trf, 99)
 hod = [G.nn_distance(G.morgan(x), trf) for x in hold["smiles"]]
 prd = [G.nn_distance(G.morgan(x), trf) for x in probe["smiles"]]
-prov_h = provenance(hold, hod, thr); prov_p = provenance(probe, prd, thr)
+mlp_h = ml_predictions(corp, hold); mlp_p = ml_predictions(corp, probe)
+prov_h = provenance(hold, hod, thr, mlp_h)
+prov_p = provenance(probe, prd, thr, mlp_p)
 
 # ── Figure 1: decision provenance (where statutory authority binds) ─────────
-labels = list(prov_h.keys())
-cols = [P["rose"], P["amber"], P["brown"], P["dblue"]]
+labels = [b for b in BRANCHES if prov_h[b] or prov_p[b]]
+_palette = {"Out-of-scope skeleton → unknown": P["dteal"],
+            "Schedule 1 → CWA (mandatory)": P["rose"],
+            "Annex exemption → CWA forbidden": P["amber"],
+            "Out-of-domain → unknown": P["brown"],
+            "Classifier decides (Sch. 2/3, unlisted)": P["dblue"]}
+cols = [_palette[b] for b in labels]
 fig, ax = plt.subplots(figsize=(10.5, 3.2))
 for yi, (name, prov, tot) in enumerate([("External holdout\n(n=72)", prov_h, 72),
                                         ("Out-of-scope probe\n(n=40)", prov_p, 40)]):
@@ -110,7 +146,9 @@ lines += [r"\bottomrule", r"\end{tabular}"]
 # ── Table 2: where the gate binds (counts) ──────────────────────────────────
 tl = [r"\begin{tabular}{lcc}", r"\toprule",
       r"Gate branch & Holdout (n=72) & Probe (n=40) \\", r"\midrule"]
-for lab in labels:
+# every branch is listed, zero counts included: a branch that did not have to
+# act is still a guarantee the gate provides.
+for lab in BRANCHES:
     tl.append(f"{lab.replace(chr(0x2192),'$\\to$')} & {prov_h[lab]} & {prov_p[lab]} \\\\")
 tl += [r"\bottomrule", r"\end{tabular}"]
 (OUT / "table_gate_bindings.tex").write_text("\n".join(tl))
