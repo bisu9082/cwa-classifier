@@ -1,0 +1,475 @@
+{
+  "ad_threshold": 0.6841335044929397,
+  "rows": [
+    {
+      "scheme": "F2",
+      "clf": "DT",
+      "ho_CWArecall_ML": 84.0,
+      "ho_CWArecall_GATE": 84.0,
+      "ho_acc_on_predicted_GATE": 91.4,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.8754,
+      "ho_mcc_GATE": 0.8713,
+      "probe_falseCWA_ML_%": 22.5,
+      "probe_falseCWA_GATE_%": 20.0,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          1,
+          19,
+          0
+        ],
+        [
+          1,
+          0,
+          26
+        ]
+      ],
+      "cm_GATE": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          1,
+          17,
+          0
+        ],
+        [
+          1,
+          0,
+          26
+        ]
+      ]
+    },
+    {
+      "scheme": "F2",
+      "clf": "SVM",
+      "ho_CWArecall_ML": 84.0,
+      "ho_CWArecall_GATE": 84.0,
+      "ho_acc_on_predicted_GATE": 92.9,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.8998,
+      "ho_mcc_GATE": 0.8967,
+      "probe_falseCWA_ML_%": 17.5,
+      "probe_falseCWA_GATE_%": 12.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ],
+      "cm_GATE": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ]
+    },
+    {
+      "scheme": "F2",
+      "clf": "LR",
+      "ho_CWArecall_ML": 68.0,
+      "ho_CWArecall_GATE": 68.0,
+      "ho_acc_on_predicted_GATE": 87.1,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.8286,
+      "ho_mcc_GATE": 0.8239,
+      "probe_falseCWA_ML_%": 15.0,
+      "probe_falseCWA_GATE_%": 10.0,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          17,
+          7,
+          1
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ],
+      "cm_GATE": [
+        [
+          17,
+          7,
+          1
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ]
+    },
+    {
+      "scheme": "F2",
+      "clf": "RF",
+      "ho_CWArecall_ML": 64.0,
+      "ho_CWArecall_GATE": 64.0,
+      "ho_acc_on_predicted_GATE": 82.9,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.7664,
+      "ho_mcc_GATE": 0.7601,
+      "probe_falseCWA_ML_%": 12.5,
+      "probe_falseCWA_GATE_%": 10.0,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          16,
+          8,
+          1
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          2,
+          1,
+          24
+        ]
+      ],
+      "cm_GATE": [
+        [
+          16,
+          8,
+          1
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          2,
+          1,
+          24
+        ]
+      ]
+    },
+    {
+      "scheme": "F2",
+      "clf": "XGB",
+      "ho_CWArecall_ML": 68.0,
+      "ho_CWArecall_GATE": 68.0,
+      "ho_acc_on_predicted_GATE": 84.3,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.7867,
+      "ho_mcc_GATE": 0.781,
+      "probe_falseCWA_ML_%": 7.5,
+      "probe_falseCWA_GATE_%": 5.0,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          17,
+          8,
+          0
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          2,
+          1,
+          24
+        ]
+      ],
+      "cm_GATE": [
+        [
+          17,
+          8,
+          0
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          2,
+          1,
+          24
+        ]
+      ]
+    },
+    {
+      "scheme": "F3",
+      "clf": "DT",
+      "ho_CWArecall_ML": 84.0,
+      "ho_CWArecall_GATE": 84.0,
+      "ho_acc_on_predicted_GATE": 91.4,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.8754,
+      "ho_mcc_GATE": 0.8713,
+      "probe_falseCWA_ML_%": 20.0,
+      "probe_falseCWA_GATE_%": 17.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          1,
+          19,
+          0
+        ],
+        [
+          1,
+          0,
+          26
+        ]
+      ],
+      "cm_GATE": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          1,
+          17,
+          0
+        ],
+        [
+          1,
+          0,
+          26
+        ]
+      ]
+    },
+    {
+      "scheme": "F3",
+      "clf": "SVM",
+      "ho_CWArecall_ML": 68.0,
+      "ho_CWArecall_GATE": 68.0,
+      "ho_acc_on_predicted_GATE": 82.9,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.7627,
+      "ho_mcc_GATE": 0.756,
+      "probe_falseCWA_ML_%": 12.5,
+      "probe_falseCWA_GATE_%": 7.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          17,
+          8,
+          0
+        ],
+        [
+          2,
+          18,
+          0
+        ],
+        [
+          0,
+          2,
+          25
+        ]
+      ],
+      "cm_GATE": [
+        [
+          17,
+          8,
+          0
+        ],
+        [
+          2,
+          16,
+          0
+        ],
+        [
+          0,
+          2,
+          25
+        ]
+      ]
+    },
+    {
+      "scheme": "F3",
+      "clf": "LR",
+      "ho_CWArecall_ML": 64.0,
+      "ho_CWArecall_GATE": 64.0,
+      "ho_acc_on_predicted_GATE": 80.0,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.7152,
+      "ho_mcc_GATE": 0.7067,
+      "probe_falseCWA_ML_%": 12.5,
+      "probe_falseCWA_GATE_%": 7.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          16,
+          9,
+          0
+        ],
+        [
+          4,
+          16,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ],
+      "cm_GATE": [
+        [
+          16,
+          9,
+          0
+        ],
+        [
+          4,
+          14,
+          0
+        ],
+        [
+          0,
+          1,
+          26
+        ]
+      ]
+    },
+    {
+      "scheme": "F3",
+      "clf": "RF",
+      "ho_CWArecall_ML": 72.0,
+      "ho_CWArecall_GATE": 72.0,
+      "ho_acc_on_predicted_GATE": 84.3,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.7776,
+      "ho_mcc_GATE": 0.771,
+      "probe_falseCWA_ML_%": 10.0,
+      "probe_falseCWA_GATE_%": 7.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          18,
+          7,
+          0
+        ],
+        [
+          2,
+          18,
+          0
+        ],
+        [
+          1,
+          1,
+          25
+        ]
+      ],
+      "cm_GATE": [
+        [
+          18,
+          7,
+          0
+        ],
+        [
+          2,
+          16,
+          0
+        ],
+        [
+          1,
+          1,
+          25
+        ]
+      ]
+    },
+    {
+      "scheme": "F3",
+      "clf": "XGB",
+      "ho_CWArecall_ML": 76.0,
+      "ho_CWArecall_GATE": 76.0,
+      "ho_acc_on_predicted_GATE": 84.3,
+      "ho_coverage_GATE": 97.2,
+      "ho_mcc_ML": 0.774,
+      "ho_mcc_GATE": 0.7669,
+      "probe_falseCWA_ML_%": 10.0,
+      "probe_falseCWA_GATE_%": 7.5,
+      "probe_abstain_GATE_%": 15.0,
+      "cm_ML": [
+        [
+          19,
+          6,
+          0
+        ],
+        [
+          1,
+          17,
+          2
+        ],
+        [
+          1,
+          1,
+          25
+        ]
+      ],
+      "cm_GATE": [
+        [
+          19,
+          6,
+          0
+        ],
+        [
+          1,
+          15,
+          2
+        ],
+        [
+          1,
+          1,
+          25
+        ]
+      ]
+    }
+  ]
+}

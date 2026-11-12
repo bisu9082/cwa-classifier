@@ -54,7 +54,9 @@ cwa-classifier/
 ├── data/
 │   ├── seed_compounds.csv          # 105 curated seed compounds (name, CAS, class, formula)
 │   ├── external_holdout.csv        # 72 curated external holdout compounds
-│   ├── probe_flame_retardants.csv  # 10 out-of-scope probe compounds
+│   ├── probe_flame_retardants.csv  # out-of-scope probe seed list
+│   ├── probe.csv                   # 40-compound out-of-scope probe (expanded for R2)
+│   ├── probe_v1_original10.csv     # the original 10-compound probe, retained
 │   └── build/                      # outputs of the resolve/verify and corpus-build steps
 │       ├── seed_registry.csv           # resolved + verified CID, formula, SMILES for every seed
 │       ├── holdout_registry.csv        # same, for the external holdout
@@ -63,15 +65,19 @@ cwa-classifier/
 │       ├── constant_features.json      # CWC feature columns constant in the corpus
 │       ├── corpus.csv                  # full similarity-expanded corpus (3,307 compounds, all descriptors)
 │       ├── holdout.csv                 # resolved external holdout with all descriptors (72)
-│       └── probe.csv                   # resolved probe set with all descriptors (10)
+│       └── probe.csv                   # resolved probe set with all descriptors (40)
 ├── scripts/
 │   ├── 00_resolve_verify_cids.py   # CAS/name -> CID resolution + molecular-formula verification
 │   ├── 01_build_corpus.py          # similarity expansion, descriptors, CWC labelling regimes
 │   ├── 01b_refresh_cwc_features.py # recompute CWC Schedule/scaffold features in place
+│   ├── 01c_expand_probe.py         # expand the out-of-scope probe from PubChem (10 -> 40)
 │   ├── 02_benchmark.py             # three-regime, three-label, three-feature-scheme benchmark
+│   ├── 03_gate.py                  # statutory hard-rule gate: benchmark, or screen a candidate list
+│   ├── 05_figs_tables_gateA.py     # gate figures and LaTeX tables
 │   ├── cwc_schedules.py            # CWC Annex Schedule 1/2/3 structural matcher (SMARTS-based)
 │   └── test_cwc_schedules.py       # 84-case validation suite for the Schedule matcher
-├── results/                        # benchmark.csv and diagnostic outputs of 02_benchmark.py
+├── results/                        # benchmark.csv, gate_benchmark.csv and diagnostic outputs
+├── figures/                        # figures reproduced by 05_figs_tables_gateA.py
 ├── requirements.txt
 └── README.md
 ```
@@ -147,7 +153,72 @@ python scripts/02_benchmark.py \
     --outdir  results
 ```
 
-### 5. Run the CWC matcher test suite
+### 5. Expand the out-of-scope probe
+```bash
+python scripts/01c_expand_probe.py
+```
+Rebuilds `data/build/probe.csv` with 40 out-of-scope chemicals (organophosphate
+flame retardants, plasticisers, non-agent organophosphates). The original
+10-compound probe is kept as `data/probe_v1_original10.csv`.
+
+### 6. Apply the statutory hard-rule gate
+```bash
+python scripts/03_gate.py
+```
+Reproduces the gate benchmark reported in the paper
+(`results/gate_benchmark.csv`, `results/gate_details.json`): per-classifier
+CWA recall, coverage and probe false-CWA rate, before and after the gate.
+
+The gate decides as follows, in order:
+
+| Rule | Condition | Decision |
+|---|---|---|
+| R1 | out-of-scope skeleton (saxitoxin, quaternary carbamate) | `unknown` |
+| R2 | CWC Schedule 1 match | `CWA` (mandatory; overrides the classifier) |
+| R3 | explicit Annex exemption | `CWA` forbidden |
+| R4 | unlisted **and** Tanimoto NN distance > 99th-percentile threshold | `unknown` |
+| R5 | otherwise, incl. Schedule 2/3 | the classifier decides |
+
+Schedule 2/3 structures are deliberately left to the classifier: by the
+Schedule-vs-functional-class orthogonality analysis they are genuinely
+dual-use, so forcing them to the regulated class would be unsound. Where the
+rules and the classifier disagree on a Schedule 2/3 compound, that disagreement
+is the actionable triage signal.
+
+### 7. Screen your own candidate list
+```bash
+python scripts/03_gate.py --input data/example_candidates.csv
+```
+`data/example_candidates.csv` is a six-compound worked example spanning a
+Schedule 1 agent, Schedule 2 precursors, an unlisted pesticide, an
+organophosphate flame retardant and an unrelated out-of-domain molecule.
+
+The input CSV needs a `smiles` column; an optional `name` column is carried
+through. Output (`results/screened.csv`, or `--out`) has one row per candidate
+with the Schedule match and matching Annex entries, the applicability-domain
+distance and in/out verdict, the classifier call, the gate decision, and the
+rule that produced it.
+
+```
+name,smiles,cwc_schedule,cwc_entries,cwc_exempt,nn_distance,in_domain,ml_prediction,decision,rule
+sarin,CC(C)OP(=O)(C)F,1,1A.1,,0.0,1,CWA,CWA,R2 Schedule 1 (mandatory CWA)
+DMMP,COP(=O)(C)OC,2,2B.4,,0.0,1,Simulant,Simulant,R5 classifier decides
+caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,0,,,0.77,0,Simulant,unknown,R4 outside applicability domain
+```
+
+Physicochemical descriptors are retrieved from PubChem by SMILES, so that
+inference uses the same descriptor source as the training corpus; this requires
+network access. Use `--no-pubchem` to screen by the statutory rules and the
+applicability domain alone, in which case candidates that the rules do not
+determine are returned as `unknown`. `--scheme` and `--clf` select the feature
+scheme and classifier for the ML head (default `F3`/`RF`).
+
+> Caveat worth stating plainly: a fingerprint applicability domain does not
+> separate organophosphate flame retardants from organophosphate agents, so an
+> in-domain unlisted organophosphate can still be misassigned by the ML head.
+> The gate guarantees the statutory decisions (R1-R4), not the classifier's.
+
+### 8. Run the CWC matcher test suite
 ```bash
 python scripts/test_cwc_schedules.py
 ```
