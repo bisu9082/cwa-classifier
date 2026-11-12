@@ -6,17 +6,28 @@ decision authority *after* the ML classifier, instead of being one more
 soft input feature.
 
 Gate pipeline, applied per test compound:
-  1. A3 out-of-scope guard   saxitoxin / ricin / quaternary-carbamate
-                             skeletons  ->  UNKNOWN (routed out, never a class)
-  2. B3 applicability-domain Tanimoto NN distance to the training corpus
-                             above the 95th-percentile threshold -> UNKNOWN
-  3. statutory hard gate     CWC schedule >= 1  ->  CWA   (ML overruled)
-                             CWC schedule == 0  ->  not CWA; the ML head only
-                             decides Simulant vs Pesticide among unscheduled
-                             structures
-Outputs before/after metrics for the external holdout and the OOD probe.
+  1. out-of-scope guard      saxitoxin / quaternary-carbamate skeletons
+                             ->  UNKNOWN (routed out, never a class)
+  2. statutory hard gate     Schedule 1 match  ->  CWA (mandatory; ML overruled)
+                             explicit Annex exemption  ->  CWA forbidden
+                             Schedule 2/3  ->  left to the ML head, because the
+                             Schedule-vs-functional-class orthogonality analysis
+                             shows Schedule 2/3 membership is genuinely dual-use
+  3. applicability domain    unlisted structures whose Tanimoto NN distance to
+                             the training corpus exceeds the 99th-percentile
+                             leave-one-out threshold  ->  UNKNOWN
+  4. otherwise               the classifier decides
 
-Run from repo root:  python -I scripts/03_gate.py
+Two run modes, from the repo root:
+
+  benchmark   python -I scripts/03_gate.py
+              before/after metrics on the external holdout and the OOD probe.
+
+  screening   python -I scripts/03_gate.py --input your_candidates.csv
+              screen an analyst's own candidate list; writes one row per
+              candidate with the Schedule match, the applicability-domain
+              distance, the classifier call and the gate decision with the
+              rule that produced it.
 """
 from __future__ import annotations
 import sys, json
@@ -83,7 +94,11 @@ def nn_distance(fp, train_fps):
 
 
 def ad_threshold(train_fps, pct=95):
-    """95th-percentile of leave-one-out NN distance within the training set."""
+    """Percentile of the leave-one-out NN distance within the training set.
+
+    The gate uses pct=99: at pct=95 the threshold rejects 17 of 45 unscheduled
+    holdout compounds, which is too aggressive to be operationally useful.
+    """
     d = []
     for i, fp in enumerate(train_fps):
         others = train_fps[:i] + train_fps[i + 1:]
@@ -148,6 +163,143 @@ def metrics(y_true, y_pred, tag):
             "mcc": round(mcc, 4) if mcc == mcc else None,
             "macro_f1": round(mf1, 4) if mf1 == mf1 else None,
             "confusion": cm}
+
+
+
+# ── operational screening mode (--input) ───────────────────────────────────
+_spec_b = _ilu.spec_from_file_location("build01", HERE / "01_build_corpus.py")
+_build = None
+
+
+def _load_build():
+    """Lazily import 01_build_corpus for its PubChem property helpers."""
+    global _build
+    if _build is None:
+        _build = _ilu.module_from_spec(_spec_b)
+        _spec_b.loader.exec_module(_build)
+    return _build
+
+
+def cid_for_smiles(smiles: str) -> int | None:
+    """Resolve one SMILES to a PubChem CID (None if PubChem cannot match it)."""
+    import urllib.parse
+    b = _load_build()
+    url = (f"{b.PUG}/compound/smiles/{urllib.parse.quote(smiles, safe='')}"
+           f"/cids/JSON")
+    try:
+        js = b._get(url, tries=2)
+        return int(js["IdentifierList"]["CID"][0])
+    except Exception:
+        return None
+
+
+def descriptors_for(smiles: str) -> dict | None:
+    """PubChem physicochemical + formula-derived elemental features.
+
+    The training corpus was built from PubChem computed properties, so
+    inference uses the same source rather than a locally recomputed
+    approximation; a candidate PubChem cannot resolve is screened by the
+    statutory rules alone (rule-only mode).
+    """
+    b = _load_build()
+    cid = cid_for_smiles(smiles)
+    if cid is None:
+        return None
+    props = b.fetch_props([cid]).get(cid)
+    if not props:
+        return None
+    phys = b.phys_features(props)
+    if phys is None:
+        return None
+    row = dict(phys)
+    row.update(b.elemental_features(props.get("MolecularFormula", "")))
+    row.update(cwc.schedule_features(smiles))
+    return row
+
+
+def gate_decision(ml_pred, score, schedule, smiles, dist, thr, exempt):
+    """Single-compound Gate-A decision, with the rule that produced it.
+
+    Mirrors apply_gate() exactly; it additionally reports which rule fired so
+    an analyst can see why a candidate was routed where it was.
+    """
+    if a3_out_of_scope(smiles):
+        return UNKNOWN, "R1 out-of-scope structural guard"
+    if schedule == 1:
+        return CWA, "R2 Schedule 1 (mandatory CWA)"
+    if exempt and ml_pred == CWA:
+        alt = SIM if score is not None and score[SIM] >= score[PEST] else PEST
+        return alt, "R3 Annex exemption forbids CWA"
+    if schedule == 0 and dist > thr:
+        return UNKNOWN, "R4 outside applicability domain"
+    if ml_pred is None:
+        return UNKNOWN, "no descriptors (rule-only mode)"
+    return int(ml_pred), "R5 classifier decides"
+
+
+def screen(path: Path, scheme: str, clf_name: str, out_path: Path,
+           use_pubchem: bool = True) -> int:
+    """Screen a candidate list through the trained head and the Gate-A rules."""
+    cand = pd.read_csv(path)
+    if "smiles" not in cand.columns:
+        print(f"error: {path} has no 'smiles' column", file=sys.stderr)
+        return 2
+    names = (cand["name"] if "name" in cand.columns
+             else pd.Series([""] * len(cand)))
+
+    corp = pd.read_csv(BUILD / "corpus.csv")
+    cols = SCHEMES[scheme]
+    clf = make_clf(clf_name, proba=True)
+    clf.fit(corp[cols].astype(float).values,
+            corp["label_L2"].astype(int).values)
+
+    tr_fps = [f for f in (morgan(s) for s in corp["smiles"]) if f is not None]
+    thr = ad_threshold(tr_fps, 99)
+    print(f"model {scheme}/{clf_name} trained on n={len(corp)}; "
+          f"AD threshold = {thr:.3f}", flush=True)
+
+    rows = []
+    for name, smi in zip(names, cand["smiles"]):
+        mol = Chem.MolFromSmiles(smi) if isinstance(smi, str) else None
+        if mol is None:
+            rows.append({"name": name, "smiles": smi, "cwc_schedule": "",
+                         "cwc_entries": "", "cwc_exempt": "", "nn_distance": "",
+                         "in_domain": "", "ml_prediction": "",
+                         "decision": "invalid SMILES", "rule": "not parsed"})
+            continue
+        res = cwc.classify(smi)
+        dist = nn_distance(morgan(smi), tr_fps)
+        feats = descriptors_for(smi) if use_pubchem else None
+        if feats is not None and all(c in feats for c in cols):
+            X = np.array([[float(feats[c]) for c in cols]])
+            ml = int(clf.predict(X)[0])
+            score = clf.predict_proba(X)[0]
+        else:
+            ml, score = None, None
+        dec, rule = gate_decision(ml, score, res["schedule"], smi, dist, thr,
+                                  bool(res["exempt"]))
+        rows.append({
+            "name": name, "smiles": smi,
+            "cwc_schedule": res["schedule"],
+            "cwc_entries": ";".join(res["entries"]),
+            "cwc_exempt": res["exempt"],
+            "nn_distance": round(dist, 3),
+            "in_domain": int(dist <= thr),
+            "ml_prediction": CLASS_NAMES[ml] if ml is not None else "n/a",
+            "decision": CLASS_NAMES[dec] if dec != UNKNOWN else "unknown",
+            "rule": rule,
+        })
+        print(f"  {str(name)[:28]:28s} Sch{res['schedule']}  d={dist:.2f}  "
+              f"-> {rows[-1]['decision']:9s} [{rule}]", flush=True)
+
+    df = pd.DataFrame(rows)
+    df.to_csv(out_path, index=False)
+    print(f"\nwrote {out_path}  ({len(df)} candidates)")
+    n_unknown = int((df["decision"] == "unknown").sum())
+    n_flag = int(df["cwc_schedule"].astype(str).isin(["2", "3"]).sum())
+    print(f"  routed to unknown: {n_unknown}; "
+          f"Schedule 2/3 requiring analyst review: {n_flag}")
+    return 0
 
 
 def main():
@@ -246,5 +398,34 @@ def main():
     print("\nwrote results/gate_benchmark.csv + gate_details.json")
 
 
+def _cli(argv=None) -> int:
+    import argparse
+    ap = argparse.ArgumentParser(
+        description="Gate-A statutory hard-rule gate: benchmark, or screen a "
+                    "candidate list.")
+    ap.add_argument("--input", type=Path, metavar="CSV",
+                    help="candidate list to screen; requires a 'smiles' "
+                         "column, optional 'name' column. Omit to run the "
+                         "manuscript benchmark instead.")
+    ap.add_argument("--out", type=Path, default=None, metavar="CSV",
+                    help="where to write the screening result "
+                         "(default results/screened.csv)")
+    ap.add_argument("--scheme", default="F3", choices=sorted(SCHEMES),
+                    help="feature scheme for the ML head (default F3)")
+    ap.add_argument("--clf", default="RF",
+                    choices=["DT", "SVM", "LR", "RF", "XGB"],
+                    help="classifier for the ML head (default RF)")
+    ap.add_argument("--no-pubchem", action="store_true",
+                    help="skip PubChem descriptor retrieval and screen by the "
+                         "statutory rules and applicability domain alone")
+    args = ap.parse_args(argv)
+    if args.input is None:
+        main()
+        return 0
+    out = args.out or (OUT / "screened.csv")
+    return screen(args.input, args.scheme, args.clf, out,
+                  use_pubchem=not args.no_pubchem)
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(_cli())
