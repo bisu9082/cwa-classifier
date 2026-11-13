@@ -55,8 +55,6 @@ cwa-classifier/
 │   ├── seed_compounds.csv          # 105 curated seed compounds (name, CAS, class, formula)
 │   ├── external_holdout.csv        # 72 curated external holdout compounds
 │   ├── probe_flame_retardants.csv  # out-of-scope probe seed list
-│   ├── probe.csv                   # 40-compound out-of-scope probe (expanded for R2)
-│   ├── probe_v1_original10.csv     # the original 10-compound probe, retained
 │   └── build/                      # outputs of the resolve/verify and corpus-build steps
 │       ├── seed_registry.csv           # resolved + verified CID, formula, SMILES for every seed
 │       ├── holdout_registry.csv        # same, for the external holdout
@@ -65,7 +63,8 @@ cwa-classifier/
 │       ├── constant_features.json      # CWC feature columns constant in the corpus
 │       ├── corpus.csv                  # full similarity-expanded corpus (3,307 compounds, all descriptors)
 │       ├── holdout.csv                 # resolved external holdout with all descriptors (72)
-│       └── probe.csv                   # resolved probe set with all descriptors (40)
+│       ├── probe.csv                   # resolved probe set with all descriptors (40)
+│       └── probe_v1_original10.csv     # the original resolved 10-compound probe
 ├── scripts/
 │   ├── 00_resolve_verify_cids.py   # CAS/name -> CID resolution + molecular-formula verification
 │   ├── 01_build_corpus.py          # similarity expansion, descriptors, CWC labelling regimes
@@ -93,8 +92,10 @@ cwa-classifier/
   a parent-scaffold consistency filter (`data/build/corpus.csv`)
 - **External holdout**: 72 OPCW-grounded / EPA-registered compounds, held
   entirely outside the training corpus (25 CWA, 20 Simulant, 27 Pesticide)
-- **Out-of-scope probe**: 10 organophosphorus flame retardants, reported as
-  an applicability-domain check rather than a fourth class
+- **Out-of-scope probe**: 40 out-of-domain industrial chemicals (expanded from
+  10 for R2: organophosphate flame retardants, plasticisers, non-agent
+  organophosphates, phthalates, consumer chemicals), reported as an
+  applicability-domain check rather than a fourth class
 
 ## CWC Annex Schedule matching
 
@@ -159,7 +160,7 @@ python scripts/01c_expand_probe.py
 ```
 Rebuilds `data/build/probe.csv` with 40 out-of-scope chemicals (organophosphate
 flame retardants, plasticisers, non-agent organophosphates). The original
-10-compound probe is kept as `data/probe_v1_original10.csv`.
+10-compound probe is kept as `data/build/probe_v1_original10.csv`.
 
 ### 6. Apply the statutory hard-rule gate
 ```bash
@@ -247,8 +248,10 @@ co-assigned to the same fold, eliminating within-cluster structural leakage.
 **External holdout**: 72 structurally novel compounds from OPCW schedules
 and EPA pesticide registries, held completely outside the training corpus.
 
-**Out-of-scope probe**: 10 organophosphorus flame retardants outside all
-three classes, used as an applicability-domain check.
+**Out-of-scope probe**: 40 industrial chemicals outside all three classes, used
+as an applicability-domain check. Expanded from the original 10 organophosphorus
+flame retardants for R2; the original set is retained as
+`data/build/probe_v1_original10.csv`.
 
 ---
 
